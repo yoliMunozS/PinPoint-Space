@@ -45,10 +45,15 @@ class SpaceController extends Controller
     {
         request()->validate(Space::$rules);
 
+        //Aseguramos que la id es la del usuario logado
+        $request->merge([
+            'user_id' => auth()->id(),
+        ]);
+
         $space = Space::create($request->all());
 
         return redirect()->route('spaces.index')
-            ->with('success', 'Space created successfully.');
+            ->with('success', 'Espacio creado con éxito.');
     }
 
     /**
@@ -74,7 +79,13 @@ class SpaceController extends Controller
     {
         $space = Space::find($id);
 
-        return view('space.edit', compact('space'));
+        //Se verifica si el usuario es propietario del espacio
+        if ($space->user_id == auth()->id()) {
+            return view('space.edit', compact('space'));
+        } else {
+            return redirect()->route('spaces.index')
+                ->with('failure', 'No eres propietario del espacio.');
+        }
     }
 
     /**
@@ -88,10 +99,17 @@ class SpaceController extends Controller
     {
         request()->validate(Space::$rules);
 
-        $space->update($request->all());
+        $space = Space::find($id);
 
-        return redirect()->route('spaces.index')
-            ->with('success', 'Space updated successfully');
+        if ($space->user_id == auth()->id()) {
+            $space->update($request->all());
+
+            return redirect()->route('spaces.index')
+                ->with('success', 'Espacio actualizado con éxito.');
+        } else {
+            return redirect()->route('spaces.index')
+                ->with('failure', 'No eres propietario del espacio.');
+        }
     }
 
     /**
@@ -101,9 +119,16 @@ class SpaceController extends Controller
      */
     public function destroy($id)
     {
-        $space = Space::find($id)->delete();
+        $space = Space::find($id);
 
-        return redirect()->route('spaces.index')
-            ->with('success', 'Space deleted successfully');
+        //Se verifica si el usuario es propietario del espacio
+        if ($space->user_id == auth()->id()) {
+            $space = Space::find($id)->delete();
+            return redirect()->route('spaces.index')
+                ->with('success', 'Espacio eliminado con éxito.');
+        } else {
+            return redirect()->route('spaces.index')
+                ->with('failure', 'No eres propietario del espacio.');
+        }
     }
 }
