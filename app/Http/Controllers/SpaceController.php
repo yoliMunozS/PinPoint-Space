@@ -99,7 +99,7 @@ class SpaceController extends Controller
     {
         request()->validate(Space::$rules);
 
-        $space = Space::find($id);
+        $space = Space::find($request->id);
 
         if ($space->user_id == auth()->id()) {
             $space->update($request->all());
