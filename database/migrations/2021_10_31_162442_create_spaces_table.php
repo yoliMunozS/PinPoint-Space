@@ -18,6 +18,7 @@ class CreateSpacesTable extends Migration
             $table->string('name');
             $table->foreignId('user_id')->constrained('users');
             $table->integer('capacity');
+            $table->timestamps();
         });
     }
 
