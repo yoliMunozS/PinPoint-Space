@@ -7,21 +7,21 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="/public/assets/plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/bootstrap.min.css">
     <!-- ThemeFisher Icon -->
-    <link rel="stylesheet" href="/public/assets/plugins/themefisher-fonts/themefisher-fonts.css">
+    <link rel="stylesheet" href="assets/plugins/themefisher-fonts/themefisher-fonts.css">
     <!-- Light Box -->
-    <link rel="stylesheet" href="/public/assets/plugins/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="assets/plugins/magnific-popup/magnific-popup.css">
     <!-- animation css -->
-    <link rel="stylesheet" href="/public/assets/plugins/animate/animate.css">
+    <link rel="stylesheet" href="assets/plugins/animate/animate.css">
     <!-- slick slider -->
-    <link rel="stylesheet" href="/public/assets/plugins/slick/slick.css">
+    <link rel="stylesheet" href="assets/plugins/slick/slick.css">
 
     <!-- Revolution Slider -->
-    <link rel="stylesheet" href="/public/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <style>
       /* Always set the map height explicitly to define the size of the div
@@ -31,7 +31,7 @@
       }
       /* Optional: Makes the sample page fill the window. */
     </style>
-    <script src="public/assets/plugins/modernizr.min.js"></script>
+    <script src="assets/plugins/modernizr.min.js"></script>
   </head>
   <body>
     <!--[if lt IE 8]>
@@ -41,7 +41,7 @@
   <!-- Loader to display before content Load-->
   <div class="loading">
 
-    <!-- <img src="img/loader.gif" alt=""> -->
+    <img src="assets/img/loader.gif" alt="">
 
     <div class="windows8 loading-position">
       <div class="wBall" id="wBall_1">
@@ -76,7 +76,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand logo" href="index.html">
-        <img src="images/logo-yellow.png" alt="">
+        <!-- <img src="assets/images/logo/logo1-png.png" alt=""> -->
       </a>
     </div>
 
@@ -84,10 +84,9 @@
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right menu">
         <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Service</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="portfolio.html">Espacios</a></li>
+        <li><a href="blog.html">Contact</a></li>
+        <li><a href="contact.html">Login</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
@@ -95,12 +94,12 @@
 
  <!-- Hero Area -section
   =========================-->
-  <header class="hero-area th-fullpage" data-parallax="scroll" data-image-src="images/slider/bg-1.jpg">
+  <header class="hero-area th-fullpage" data-parallax="scroll" data-image-src="assets/images/slider/bg-1.jpg">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1>We’re Creative <br>
-            We Ensure Quality Design</h1>
+          <h1>We think on you<br>
+            We Ensure Quality Spaces</h1>
         </div>
       </div>
     </div>
@@ -132,7 +131,7 @@
           </div>
           <div class="col-md-6">
             <div class="img-content">
-              <img class="img-responsive" src="images/case-study/case-study-img1.png" alt="">
+              <img class="img-responsive" src="assets/images/case-study/case-study-img1.png" alt="">
             </div>
           </div>
         </div>
@@ -145,7 +144,7 @@
         <div class="row">
           <div class="col-md-6">
             <div class="img-content">
-              <img class="img-responsive" src="images/case-study/case-study-img2.png" alt="">
+              <img class="img-responsive" src="assets/images/case-study/case-study-img2.png" alt="">
             </div>
           </div>
           <div class="col-md-6">
@@ -168,7 +167,7 @@
 
 <!-- Clients Sections
 =========================-->
-<section class="clients" data-parallax="scroll" data-image-src="images/slider/bg-3.jpg">
+<section class="clients" data-parallax="scroll" data-image-src="assets/images/slider/bg-3.jpg">
   <div class="section">
     <div class="container-fluid">
       <div class="row">
@@ -213,7 +212,7 @@
                     vel consectetur error facilis quae ducimus .
                   </p>
                   <div class="author">
-                    <img src="images/clients-img1.png" alt="Clients">
+                    <img src="assets/images/clients-img1.png" alt="Clients">
                     <h3 class="author-name">Paul Lapkin</h3>
                     <span class="designation">CEO at DeviserWeb</span>
                   </div>
@@ -232,28 +231,28 @@
 
   <!-- Clients Logo Sections
   =========================-->
-  <section class="clients-logo" data-parallax="scroll" data-image-src="images/slider/bg-1.jpg">
+  <section class="clients-logo" data-parallax="scroll" data-image-src="assets/images/slider/bg-1.jpg">
     <div class="section">
       <div class="container">
         <div class="row">
           <div class="col-md-4 block text-center">
-            <img src="images/clients-logo/client-logo-1.png" alt="Client Logo">
+            <img src="assets/images/clients-logo/client-logo-1.png" alt="Client Logo">
           </div>
           <div class="col-md-4 block text-center">
-            <img src="images/clients-logo/client-logo-2.png" alt="Client Logo">
+            <img src="assets/images/clients-logo/client-logo-2.png" alt="Client Logo">
           </div>
           <div class="col-md-4 block text-center">
-            <img src="images/clients-logo/client-logo-3.png" alt="Client Logo">
+            <img src="assets/images/clients-logo/client-logo-3.png" alt="Client Logo">
           </div>
         
           <div class="col-md-4 block text-center">
-            <img src="images/clients-logo/client-logo-4.png" alt="Client Logo">
+            <img src="assets/images/clients-logo/client-logo-4.png" alt="Client Logo">
           </div>
           <div class="col-md-4 block text-center">
-            <img src="images/clients-logo/client-logo-5.png" alt="Client Logo">
+            <img src="assets/images/clients-logo/client-logo-5.png" alt="Client Logo">
           </div>
           <div class="col-md-4 block text-center">
-            <img src="images/clients-logo/client-logo-6.png" alt="Client Logo">
+            <img src="assets/images/clients-logo/client-logo-6.png" alt="Client Logo">
           </div>
         </div><!-- /.End row -->
       </div>
@@ -263,9 +262,10 @@
 
   <!-- Team Sections
   =========================-->
-  <section class="team">
+  <!-- <section class="team">
     <div class="container-fluid padding-0">
-    <!-- Team title -->
+     Team title -->
+     <!--
     <div class="title text-center">
       <h2>Our Specialized Team</h2>
     </div>
@@ -273,7 +273,7 @@
       <div class="team-member">
         <div class="th-mouse-effect">
           <div class="team-img">
-            <img src="images/team/team-pic1.jpg" alt="Team img">
+            <img src="assets/images/team/team-pic1.jpg" alt="Team img">
           </div>
           <div class="overlay text-center">
             <div class="content">
@@ -297,7 +297,7 @@
       <div class="team-member">
         <div class="th-mouse-effect">
           <div class="team-img">
-            <img src="images/team/team-pic2.jpg" alt="Team img">
+            <img src="assets/images/team/team-pic2.jpg" alt="Team img">
           </div>
           <div class="overlay text-center">
             <div class="content">
@@ -321,7 +321,7 @@
       <div class="team-member">
         <div class="th-mouse-effect">
           <div class="team-img">
-            <img src="images/team/team-pic3.jpg" alt="Team img">
+            <img src="assets/images/team/team-pic3.jpg" alt="Team img">
           </div>
           <div class="overlay text-center">
             <div class="content">
@@ -345,7 +345,33 @@
       <div class="team-member">
         <div class="th-mouse-effect">
           <div class="team-img">
-            <img src="images/team/team-pic4.jpg" alt="Team img">
+            <img src="assets/images/team/team-pic4.jpg" alt="Team img">
+          </div>
+          <div class="overlay text-center">
+            <div class="content">
+              <h4>aurelien salomon</h4>
+              <span>Creative Director</span>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim.</p>
+              
+            </div>
+            <div class="social-media">
+              <li><a href="#"><i class="tf-ion-social-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="tf-ion-social-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="tf-ion-social-linkedin-outline" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="tf-ion-social-google-outline" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="tf-ion-social-instagram-outline" aria-hidden="true"></i></a></li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+   <!--  
+
+    <div class="col-md-4 col-lg-3 padding-0">
+      <div class="team-member">
+        <div class="th-mouse-effect">
+          <div class="team-img">
+            <img src="assets/images/team/team-pic5.jpg" alt="Team img">
           </div>
           <div class="overlay text-center">
             <div class="content">
@@ -369,7 +395,7 @@
       <div class="team-member">
         <div class="th-mouse-effect">
           <div class="team-img">
-            <img src="images/team/team-pic5.jpg" alt="Team img">
+            <img src="assets/images/team/team-pic6.jpg" alt="Team img">
           </div>
           <div class="overlay text-center">
             <div class="content">
@@ -393,7 +419,7 @@
       <div class="team-member">
         <div class="th-mouse-effect">
           <div class="team-img">
-            <img src="images/team/team-pic6.jpg" alt="Team img">
+            <img src="assets/images/team/team-pic7.jpg" alt="Team img">
           </div>
           <div class="overlay text-center">
             <div class="content">
@@ -417,31 +443,7 @@
       <div class="team-member">
         <div class="th-mouse-effect">
           <div class="team-img">
-            <img src="images/team/team-pic7.jpg" alt="Team img">
-          </div>
-          <div class="overlay text-center">
-            <div class="content">
-              <h4>aurelien salomon</h4>
-              <span>Creative Director</span>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim.</p>
-              
-            </div>
-            <div class="social-media">
-              <li><a href="#"><i class="tf-ion-social-facebook" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-linkedin-outline" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-google-outline" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="tf-ion-social-instagram-outline" aria-hidden="true"></i></a></li>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 col-lg-3 padding-0">
-      <div class="team-member">
-        <div class="th-mouse-effect">
-          <div class="team-img">
-            <img src="images/team/team-pic1.jpg" alt="Team img">
+            <img src="assets/images/team/team-pic1.jpg" alt="Team img">
           </div>
           <div class="overlay text-center">
             <div class="content">
@@ -469,9 +471,11 @@
     </div>
     </div>
   </section>
+  -->
 
 <!-- Contact Us Sections
 =========================-->
+<!-- 
 <section class="contact-call-to-action">
   <div class="shadow-block vh-center">
     <div class="container">
@@ -497,8 +501,12 @@
                 <div class="container">
                     <div class="footer-top">
                         <div class="col-md-4">
+
+                           -->
+                            
                             <!-- footer About section
                             ========================== -->
+                            <!-- 
                             <div class="footer-about">
                                 <h3 class="footer-title">About</h3>
                                 <p>Nemo enim ipsam voluptatem quia voluptas <br>
@@ -508,6 +516,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
+                          --> 
                             <!-- footer Address section
                             ========================== -->
                             <div class="footer-address">
@@ -562,24 +571,24 @@
     </footer>
 
 
-    <script src="plugins/jquery.min.js"></script>
+    <script src="assets/plugins/jquery.min.js"></script>
 
-    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
     <!-- slick slider -->
-    <script src="plugins/slick/slick.min.js"></script>
+    <script src="assets/plugins/slick/slick.min.js"></script>
     <!-- filter -->
-    <script src="plugins/filterizr/jquery.filterizr.min.js"></script>
+    <script src="assets/plugins/filterizr/jquery.filterizr.min.js"></script>
     <!-- Lightbox -->
-    <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
     <!-- Parallax -->
-    <script src="plugins/parallax.min.js"></script>
+    <script src="assets/plugins/parallax.min.js"></script>
     <!-- Video -->
-    <script src="plugins/jquery.vide.js"></script>
+    <script src="assets/plugins/jquery.vide.js"></script>
     <!-- google map -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
-    <script src="plugins/google-map/gmap.js"></script>
+    <script src="assets/plugins/google-map/gmap.js"></script>
 
-    <script src="js/script.js"></script>
+    <script src="assets/js/script.js"></script>
     </body>
 
     </html>
