@@ -3,25 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Fiction Multipage Bootstrap Template</title>
+    <title>PinPoint Space</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/assets/plugins/bootstrap/bootstrap.min.css">
     <!-- ThemeFisher Icon -->
-    <link rel="stylesheet" href="plugins/themefisher-fonts/themefisher-fonts.css">
+    <link rel="stylesheet" href="/public/assets/plugins/themefisher-fonts/themefisher-fonts.css">
     <!-- Light Box -->
-    <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="/public/assets/plugins/magnific-popup/magnific-popup.css">
     <!-- animation css -->
-    <link rel="stylesheet" href="plugins/animate/animate.css">
+    <link rel="stylesheet" href="/public/assets/plugins/animate/animate.css">
     <!-- slick slider -->
-    <link rel="stylesheet" href="plugins/slick/slick.css">
+    <link rel="stylesheet" href="/public/assets/plugins/slick/slick.css">
 
     <!-- Revolution Slider -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/public/assets/css/style.css">
 
     <style>
       /* Always set the map height explicitly to define the size of the div
@@ -31,7 +31,7 @@
       }
       /* Optional: Makes the sample page fill the window. */
     </style>
-    <script src="plugins/modernizr.min.js"></script>
+    <script src="public/assets/plugins/modernizr.min.js"></script>
   </head>
   <body>
     <!--[if lt IE 8]>
@@ -192,7 +192,7 @@
                     harum ipsa officia nam adipisci velit debitis! Dolore a ducimus, assumenda aspernatur fugit!
                   </p>
                   <div class="author">
-                    <img src="images/clients-img1.png" alt="Clients">
+                    <img src="public/assets/images/clients-img1.png" alt="Clients">
                     <h3 class="author-name">Paul Lapkin</h3>
                     <span class="designation">CEO at DeviserWeb</span>
                   </div>
