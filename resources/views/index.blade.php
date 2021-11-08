@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -83,15 +83,21 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Espacios</a></li>
-        
-        <!-- Redirección a login -->
-        @if (Route::has('login'))
-        <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
-        @endif
+        <!-- Redirección a home -->
+      @auth
+        <li><a href="{{ url('/home') }}">Home</a></li>
+      @endauth
 
-        <li><a href="blog.html">Contact</a></li>
+      <!-- Redirección a espacios -->
+        <li><a href="">Espacios</a></li>
+        
+      <!-- Redirección a login -->
+      @if (Route::has('login'))
+        <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
+      @endif
+
+      <!-- Redirección a contact -->
+        <li><a href="">Contact</a></li>
         
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -111,22 +117,23 @@
     </div>
   </header>
 
- <!-- Case Study Sections
+ <!-- Secciones
   =========================-->
 
   <section class="case-study">
     <div class="text-center">
-      <h2 class="title">Case Study</h2>
+      <h2 class="title">Spaces that you need</h2>
     </div>
-    <!-- Case Study Description
-      top section -->
+
+    <!-- PinPoint Description
+      =========================-->
     <div class="case-study-content">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
             <!-- inner sub-title -->
             <div class="content">
-              <h4 class="inner-title">E Banks That Accept Us Casino Players</h4>
+              <h4 class="inner-title">Los espacios para preparar tu reunión o evento</h4>
               <p class="case-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euiyd tincidunt ut laoreet dolore magna aliquam nibh utpat.Ullamcorper suscipit lobo nibh euiyd tinci- dunt ut laoreet.</p>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem impedit molestias cumque dolorum, sunt, provident blanditiis tempora, aut explicabo error ipsa repudiandae. Dolores eius eaque eum mollitia esse nisi necessitatibus distinctio ea, dolorem non, optio minima temporibus blanditiis, quidem aperiam!
@@ -156,7 +163,7 @@
           <div class="col-md-6">
             <!-- inner sub-title -->
             <div class="content">
-              <h4 class="inner-title">E Banks That Accept Us Casino Players</h4>
+              <h4 class="inner-title">Compara espacios</h4>
               <p class="case-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euiyd tincidunt ut laoreet dolore magna aliquam nibh utpat.Ullamcorper suscipit lobo nibh euiyd tinci- dunt ut laoreet.</p>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex unde soluta, nesciunt consequuntur accusamus sint! Eaque quod consectetur laborum quae repudiandae illum hic explicabo sunt perferendis. Voluptas, fugiat eos sed!
@@ -171,7 +178,7 @@
   </section>
   
 
-<!-- Clients Sections
+<!-- Opiniones Clientes
 =========================-->
 <section class="clients" data-parallax="scroll" data-image-src="assets/images/slider/bg-3.jpg">
   <div class="section">
@@ -185,45 +192,39 @@
             <div class="testimonial-slider">
               <div class="item">
                 <!-- Slider item -->
-                <!-- <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 padding-0"> -->
+                <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 padding-0">
                 <div class="testimonials-area">
-                  <!-- <div class="round-shape"></div> -->
-                  <p class="testimonials-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna. ipsum dolor sit amet, consectetuer
-                    adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                    volutpat. Ut wisi enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Nemo vitae natus odio quasi recusandae, esse! Libero ipsum cum aliquid, nisi, maiores animi iste
-                    vel consectetur error facilis quae ducimus sint beatae vitae nesciunt explicabo esse nam. Soluta
-                    harum ipsa officia nam adipisci velit debitis! Dolore a ducimus, assumenda aspernatur fugit!
+                  <div class="round-shape"></div>
+                  <p class="testimonials-description">Nuestros espacios son especialmente seleccionados 
+                    para una acogida perfecta. Nosotros no trabajamos con los que no respetan nuestros 
+                    Criterios de Calidad, incluyendo la normativa de higiene, limpieza y desinfección. 
                   </p>
                   <div class="author">
-                    <img src="assets/images/clients-img1.png" alt="Clients">
-                    <h3 class="author-name">Paul Lapkin</h3>
-                    <span class="designation">CEO at IOC</span>
+                    <img src="assets/images/clients-img1.png" alt="Clients">                    
+                    <h3 class="author-name">Spounge Bob</h3>
+                    <span class="designation">CEO at PinPoint</span>
                   </div>
                 </div>
-                <!-- </div> -->
+                </div>
                 <!-- End Slider item -->
               </div>
-              <div class="item">
+              <div class="item"> 
                 <!-- Slider item -->
-                <!-- <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 padding-0"> -->
-                <div class="testimonials-area">
-                  <!-- <div class="round-shape"></div> -->
-                  <p class="testimonials-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna. ipsum dolor sit amet, consectetuer
-                    adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                    volutpat. Ut wisi enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Nemo vitae natus odio quasi recusandae, esse! Libero ipsum cum aliquid, nisi, maiores animi iste
-                    vel consectetur error facilis quae ducimus .
+                <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 padding-0"> 
+                <div class="testimonials-area"> 
+                   <div class="round-shape"></div>
+                   <p class="testimonials-description">Somos una empresa responsable y con muchas ganas de 
+                     dar una gran oportunidad para hacer reservas de espacios tanto para grandes, medianas 
+                     y pequeñas empresas. Además, incluímos reuniones para particulares, ya que nos preocupan 
+                     todas aquellas personas que necesitan disponer de un espacio para reuniones o eventos..
                   </p>
                   <div class="author">
-                    <img src="assets/images/clients-img1.png" alt="Clients">
-                    <h3 class="author-name">Paul Lapkin</h3>
-                    <span class="designation">CEO at DeviserWeb</span>
+                    <img src="assets/images/yo.jpg" width="75px" id="yo-foto">
+                    <h3 class="author-name">Mariola Ortín</h3>
+                    <span class="designation">FrontEnd Developer PinPoint Space</span>
                   </div>
                 </div>
-                <!-- </div> -->
+                </div>
                 <!-- End Slider item -->
               </div>
             </div>
@@ -244,8 +245,8 @@
                                 <p>PinPoint Space <br>
                                 Av. del Paral·lel, 71, 08004 Barcelona.</p>
                                 <p class="contact-address">
-                                    Contact us : <a href="tel:+610383666274">+34 93 3476100 </a> <br>
-                                    Write us : <a href="mailto:info@info.com">grupo3proyectodaw@info.com</a>
+                                    Contact us : <a href="">+34 93 3476100 </a> <br>
+                                    Write us : <a href="mailto:mariolika19@gmail.com">grupo3proyectodaw@info.com</a>
                                 </p>
                             </div>
                         </div>
@@ -255,30 +256,34 @@
                             <div class="footer-social-media">
                                 <h3 class="footer-title">Keep in touch</h3>
                                 <ul class="footer-media-link">
-                                    <li><a href="#"><i class="tf-ion-social-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="tf-ion-social-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="tf-ion-social-linkedin-outline"
+                                    <li><a href="https://www.facebook.com/"><i class="tf-ion-social-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.twitter.com/"><i class="tf-ion-social-twitter" aria-hidden="true"></i></a></li>                                   
+                                    <li><a href="https://www.instagram.com/"><i class="tf-ion-social-instagram-outline"
                                                 aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="tf-ion-social-google-outline" aria-hidden="true"></i></a>
+                                    <li><a href="https://github.com/yoliMunozS/PinPoint-Space"><i class="tf-ion-social-github-outline" aria-hidden="true"></i></a>
                                     </li>
-                                    <li><a href="#"><i class="tf-ion-social-instagram-outline"
-                                                aria-hidden="true"></i></a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="footer-nav text-center">
                         <div class="col-md-12">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="services.html">Espacios</a></li>
+                            <ul>                  
+                              <!-- Redirección a home -->
+                              @auth
+                                <li><a href="{{ url('/home') }}">Home</a></li>
+                              @endauth
 
-                                <!-- Redirección a login -->
-                                @if (Route::has('login'))
+                              <!-- Redirección a espacios -->
+                                <li><a href="">Espacios</a></li>
+
+                              <!-- Redirección a login -->
+                              @if (Route::has('login'))
                                 <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
-                                @endif
+                              @endif
 
-                                <li><a href="contact.html">Contact</a></li>
+                              <!-- Redirección a contact -->
+                                <li><a href="">Contact</a></li>
                                 
                             </ul>
                         </div>
@@ -286,8 +291,8 @@
                     <div class="text-center">
                         <div class="col-md-12">
                             <div class="copyright">
-                                <p>&copy; 2013-2017 All rights reserved. <br>
-                                    Design and Developed By <a href="https://themefisher.com">Themefisher.com</a></p>
+                                <p>&copy; 2021-2022 All rights reserved. <br>
+                                    Design and Developed By <a href="https://github.com/yoliMunozS/PinPoint-Space">PinPoint-Space.com</a></p>
                             </div>
                         </div>
                     </div>
