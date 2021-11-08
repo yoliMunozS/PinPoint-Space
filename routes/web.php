@@ -17,10 +17,27 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('/index', function () {
+    return view('index');
+});
+Route::get('/home', function () {
+    return view('index');
+});
+
+Route::get('/loginIn', function () {
+    return view('loginIn');
+});
+
+// Route::get('/index2', function () {
+//     return view('index2');
+// });
+
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/loginIn', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
+// Lo comento por repetición
+// Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
