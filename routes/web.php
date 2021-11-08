@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\SpaceController;
+use App\Http\Controllers\BookingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,3 +44,9 @@ Route::get('/loginIn', [App\Http\Controllers\HomeController::class, 'index'])->n
 // Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// Enrutado de espacios 
+Route::resource('spaces', SpaceController::class);
+
+// Enrutado de reserva espacios
+Route::resource('bookings', BookingController::class);
