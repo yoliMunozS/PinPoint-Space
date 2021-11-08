@@ -98,7 +98,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1>We think on you<br>
+          <h1>We know what you need,<br>
             We Ensure Quality Spaces</h1>
         </div>
       </div>
@@ -191,9 +191,9 @@
                     harum ipsa officia nam adipisci velit debitis! Dolore a ducimus, assumenda aspernatur fugit!
                   </p>
                   <div class="author">
-                    <img src="public/assets/images/clients-img1.png" alt="Clients">
+                    <img src="assets/images/clients-img1.png" alt="Clients">
                     <h3 class="author-name">Paul Lapkin</h3>
-                    <span class="designation">CEO at DeviserWeb</span>
+                    <span class="designation">CEO at IOC</span>
                   </div>
                 </div>
                 <!-- </div> -->
@@ -521,10 +521,11 @@
                             ========================== -->
                             <div class="footer-address">
                                 <h3 class="footer-title">Address</h3>
-                                <p>DeviserWeb 24/A,Jalalabad amborkhana amagnina, Sylhet.</p>
+                                <p>PinPoint Space <br>
+                                Av. del Paral·lel, 71, 08004 Barcelona.</p>
                                 <p class="contact-address">
-                                    Contact us : <a href="tel:+610383666274">+61 (0) 3 8366 6274 </a> <br>
-                                    Write us : <a href="mailto:info@info.com">mail@itsnuman.com</a>
+                                    Contact us : <a href="tel:+610383666274">+34 93 3476100 </a> <br>
+                                    Write us : <a href="mailto:info@info.com">grupo3proyectodaw@info.com</a>
                                 </p>
                             </div>
                         </div>
