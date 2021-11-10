@@ -75,18 +75,17 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand logo" href="index.html">
-        <!-- <img src="assets/images/logo/logo1-png.png" alt=""> -->
+      <a class="navbar-brand logo" href="{{ url('/home')}}">
+        <img src="assets/images/logo/logosvg.svg" height="220%" img-align="left">
       </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right menu">
-        <!-- Redirección a home -->
-      @auth
+
+      <!-- Redirección a home -->
         <li><a href="{{ url('/home') }}">Home</a></li>
-      @endauth
 
       <!-- Redirección a espacios -->
         <li><a href="">Espacios</a></li>
@@ -163,7 +162,7 @@
           <div class="col-md-6">
             <!-- inner sub-title -->
             <div class="content">
-              <h4 class="inner-title">Compara espacios</h4>
+              <h4 class="inner-title">¿Cómo puedo publicar una sala?</h4>
               <p class="case-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euiyd tincidunt ut laoreet dolore magna aliquam nibh utpat.Ullamcorper suscipit lobo nibh euiyd tinci- dunt ut laoreet.</p>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex unde soluta, nesciunt consequuntur accusamus sint! Eaque quod consectetur laborum quae repudiandae illum hic explicabo sunt perferendis. Voluptas, fugiat eos sed!
@@ -216,7 +215,7 @@
                    <p class="testimonials-description">Somos una empresa responsable y con muchas ganas de 
                      dar una gran oportunidad para hacer reservas de espacios tanto para grandes, medianas 
                      y pequeñas empresas. Además, incluímos reuniones para particulares, ya que nos preocupan 
-                     todas aquellas personas que necesitan disponer de un espacio para reuniones o eventos..
+                     todas aquellas personas que necesitan disponer de un espacio para reuniones o eventos.
                   </p>
                   <div class="author">
                     <img src="assets/images/yo.jpg" width="75px" id="yo-foto">
@@ -237,6 +236,26 @@
 
 
   
+<footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="container">
+                    <div class="footer-top">
+                        <div class="col-md-4">
+                            <!-- footer About section
+                            ========================== -->
+                            <div class="footer-about">
+                                <h3 class="footer-title">About Us</h3>
+                                <p>Somos una pequeña empresa que busca <br>
+                                soluciones futuras. Todos podemos  <br>
+                                observar que el teletrabajo ha llegado para <br>
+                                quedarse, por lo tanto necesitamos<br>
+                                adaptarnos a ello. Así pues, decidimos crear este<br>
+                                buscador, para facilitar a todos una más<br>
+                                sencilla búsqueda de espacios.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
 
                             <!-- footer Address section
                             ========================== -->
@@ -270,9 +289,7 @@
                         <div class="col-md-12">
                             <ul>                  
                               <!-- Redirección a home -->
-                              @auth
                                 <li><a href="{{ url('/home') }}">Home</a></li>
-                              @endauth
 
                               <!-- Redirección a espacios -->
                                 <li><a href="">Espacios</a></li>
