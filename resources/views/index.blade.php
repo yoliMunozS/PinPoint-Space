@@ -76,7 +76,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand logo" href="{{ url('/home')}}">
-        <img src="assets/images/logo/logosvg.svg" height="220%" img-align="left">
+        <img src="assets/images/logo/logo1-negro.png" height="220%" img-align="left">
       </a>
     </div>
 
