@@ -45,9 +45,18 @@ class BookingController extends Controller
     {
         request()->validate(Booking::$rules);
 
-        $booking = Booking::create($request->all());
-
-        return redirect()->route('bookings.index')
+        $space_id = $request->space_id;
+        
+        $bookings = Booking::All()->where('space_id','=',$space_id);
+           
+        foreach ($bookings as $book) {
+            if (!($request->end <= $book->start or $request->start >= $book->end)){
+                return redirect()->route('bookings.index')
+            ->with('success', 'Sala ocupada.');
+            };
+        }
+            $booking = Booking::create($request->all());
+            return redirect()->route('bookings.index')
             ->with('success', 'Booking created successfully.');
     }
 
