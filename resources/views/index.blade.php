@@ -23,6 +23,14 @@
     <!-- Revolution Slider -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map_canvas {
+        height: 100%;
+      } -->
+      <!-- /* Optional: Makes the sample page fill the window. */ -->
+    </style>
     <script src="assets/plugins/modernizr.min.js"></script>
   </head>
   <body>
@@ -57,7 +65,7 @@
 
  <!-- Navigation -section
   =========================-->
-<nav class="navbar navbar-fixed-top navigation" >
+<nav class="navbar navbar-fixed-top navigation">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -84,7 +92,7 @@
         
       <!-- Redirección a login -->
       @if (Route::has('login'))
-        <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('login') }}"> {{ __('Login') }} </a></li>
       @endif
 
       <!-- Redirección a contact -->
@@ -129,7 +137,7 @@
               <p>
                 Encuentra el lugar ideal en Barcelona y su área metropolitana donde organizar y celebrar tu reunión de trabajo. ¿A qué esperas para descubrirlo?
               </p>
-              <!-- Botón para saber más -->
+              <!-- View More Details -->
               <a class="btn btn-default btn-main" href="#" role="button">Saber más</a>
             </div>
           </div>
@@ -141,7 +149,6 @@
         </div>
       </div>
     </div>
-
     <!-- Case Study Description
       bottom section -->
     <div class="case-study-content">
@@ -160,7 +167,7 @@
               <p>
                 Nosotros te ayudamos a conseguir que tu espacio tenga una mayor difusión, llegando al alcance de más personas. Vas a conseguir así tener un mayor número de clientes y una mayor rentabilidad de tu local.  
               </p>
-              <!-- Botón para saber más -->
+              <!-- View More Details -->
               <a class="btn btn-default btn-main" href="{{ route('login') }}">Saber más</a>
             </div>
           </div>
@@ -263,71 +270,71 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <!-- footer Media link section
-                            ========================== -->
-                            <div class="footer-social-media">
-                                <h3 class="footer-title">Keep in touch</h3>
-                                <ul class="footer-media-link">
-                                    <li><a href="https://www.facebook.com/"><i class="tf-ion-social-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://www.twitter.com/"><i class="tf-ion-social-twitter" aria-hidden="true"></i></a></li>                                   
-                                    <li><a href="https://www.instagram.com/"><i class="tf-ion-social-instagram-outline"
-                                                aria-hidden="true"></i></a></li>
-                                    <li><a href="https://github.com/yoliMunozS/PinPoint-Space"><i class="tf-ion-social-github-outline" aria-hidden="true"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-nav text-center">
-                        <div class="col-md-12">
-                            <ul>                  
-                              <!-- Redirección a home -->
-                                <li><a href="{{ url('/home') }}">Home</a></li>
-
-                              <!-- Redirección a espacios -->
-                                <li><a href="">Espacios</a></li>
-
-                              <!-- Redirección a login -->
-                              @if (Route::has('login'))
-                                <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
-                              @endif
-
-                              <!-- Redirección a contact -->
-                                <li><a href="">Contact</a></li>
-                                
+                        <!-- footer Media link section
+                        ========================== -->
+                        <div class="footer-social-media">
+                            <h3 class="footer-title">Keep in touch</h3>
+                            <ul class="footer-media-link">
+                                <li><a href="https://www.facebook.com/"><i class="tf-ion-social-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.twitter.com/"><i class="tf-ion-social-twitter" aria-hidden="true"></i></a></li>                                   
+                                <li><a href="https://www.instagram.com/"><i class="tf-ion-social-instagram-outline"
+                                            aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/yoliMunozS/PinPoint-Space"><i class="tf-ion-social-github-outline" aria-hidden="true"></i></a>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="text-center">
-                        <div class="col-md-12">
-                            <div class="copyright">
-                                <p>&copy; 2021-2022 All rights reserved. <br>
-                                    Design and Developed By <a href="https://github.com/yoliMunozS/PinPoint-Space">PinPoint-Space.com</a></p>
-                            </div>
+                </div>
+                <div class="footer-nav text-center">
+                    <div class="col-md-12">
+                        <ul>                  
+                          <!-- Redirección a home -->
+                            <li><a href="{{ url('/home') }}">Home</a></li>
+
+                          <!-- Redirección a espacios -->
+                            <li><a href="">Espacios</a></li>
+
+                          <!-- Redirección a login -->
+                          @if (Route::has('login'))
+                            <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
+                          @endif
+
+                          <!-- Redirección a contact -->
+                            <li><a href="">Contact</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="col-md-12">
+                        <div class="copyright">
+                            <p>&copy; 2021-2022 All rights reserved. <br>
+                                Design and Developed By <a href="https://github.com/yoliMunozS/PinPoint-Space">PinPoint-Space.com</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+  </footer>
 
 
-    <!-- JQuery -->
-    <script src="assets/plugins/jquery.min.js"></script>
-      <!-- bootstrap -->
-    <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
-    <!-- slick slider -->
-    <script src="assets/plugins/slick/slick.min.js"></script>
-    <!-- filter -->
-    <!-- <script src="assets/plugins/filterizr/jquery.filterizr.min.js"></script> -->
-    <!-- Lightbox -->
-    <script src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <!-- Parallax -->
-    <script src="assets/plugins/parallax.min.js"></script>
-    <!-- Video -->
-    <!-- <script src="assets/plugins/jquery.vide.js"></script> -->
-   
-    <script src="assets/js/script.js"></script>
-    </body>
+  <!-- JQuery -->
+  <script src="assets/plugins/jquery.min.js"></script>
+    <!-- bootstrap -->
+  <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
+  <!-- slick slider -->
+  <script src="assets/plugins/slick/slick.min.js"></script>
+  <!-- filter -->
+  <!-- <script src="assets/plugins/filterizr/jquery.filterizr.min.js"></script> -->
+  <!-- Lightbox -->
+  <script src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- Parallax -->
+  <script src="assets/plugins/parallax.min.js"></script>
+  <!-- Video -->
+  <!-- <script src="assets/plugins/jquery.vide.js"></script> -->
 
-    </html>
+  <script src="assets/js/script.js"></script>
+  </body>
+
+</html>
