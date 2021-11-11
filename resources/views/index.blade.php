@@ -137,28 +137,26 @@
               <p>
                 Encuentra el lugar ideal en Barcelona y su área metropolitana donde organizar y celebrar tu reunión de trabajo. ¿A qué esperas para descubrirlo?
               </p>
-              <!-- View More Details -->
+              <!-- Botón para saber más -->
               <a class="btn btn-default btn-main" href="#" role="button">Saber más</a>
             </div>
           </div>
           <div class="col-md-6">
             <div class="img-content">
-              <!-- <img class="img-responsive" src="assets/images/case-study/case-study-img1.png" alt=""> -->
               <img class="img-responsive" src="assets/images/case-study/case-study-img2.png" alt="">
-              
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- Case Study Description
       bottom section -->
     <div class="case-study-content">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="img-content">
-              <!-- <img class="img-responsive" src="assets/images/case-study/case-study-img2.png" alt=""> -->
+            <div class="img-content">              
               <img class="img-responsive" src="assets/images/case-study/case-study-img1.png" alt="">
             </div>
           </div>
@@ -170,8 +168,8 @@
               <p>
                 Nosotros te ayudamos a conseguir que tu espacio tenga una mayor difusión, llegando al alcance de más personas. Vas a conseguir así tener un mayor número de clientes y una mayor rentabilidad de tu local.  
               </p>
-              <!-- View More Details -->
-              <a class="btn btn-default btn-main" href="#" role="button">Saber más</a>
+              <!-- Botón para saber más -->
+              <a class="btn btn-default btn-main" href="{{ route('login') }}">Saber más</a>
             </div>
           </div>
         </div>
