@@ -76,7 +76,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand logo" href="{{ url('/home')}}">
-        <img src="assets/images/logo/logo1-negro.png" height="220%" img-align="left">
+        <img src="assets/images/logo/logo1-negro2.png" height="220%" img-align="left">
       </a>
     </div>
 
@@ -88,7 +88,7 @@
         <li><a href="{{ url('/home') }}">Home</a></li>
 
       <!-- Redirección a espacios -->
-        <li><a href="">Espacios</a></li>
+        <li><a href="">Spaces</a></li>
         
       <!-- Redirección a login -->
       @if (Route::has('login'))
@@ -133,17 +133,19 @@
             <!-- inner sub-title -->
             <div class="content">
               <h4 class="inner-title">Los espacios para preparar tu reunión o evento</h4>
-              <p class="case-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euiyd tincidunt ut laoreet dolore magna aliquam nibh utpat.Ullamcorper suscipit lobo nibh euiyd tinci- dunt ut laoreet.</p>
+              <p class="case-description">Disponemos de diferentes y nuevos espacios a diario para reuniones comerciales, exposiciones o diferentes eventos en Barcelona y alrededores. Encuentra fotografías, precios, opiniones y promociones de los mejores espacios en Barcelona.</p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem impedit molestias cumque dolorum, sunt, provident blanditiis tempora, aut explicabo error ipsa repudiandae. Dolores eius eaque eum mollitia esse nisi necessitatibus distinctio ea, dolorem non, optio minima temporibus blanditiis, quidem aperiam!
+                Encuentra el lugar ideal en Barcelona y su área metropolitana donde organizar y celebrar tu reunión de trabajo. ¿A qué esperas para descubrirlo?
               </p>
               <!-- View More Details -->
-              <a class="btn btn-default btn-main" href="#" role="button">View More</a>
+              <a class="btn btn-default btn-main" href="#" role="button">Saber más</a>
             </div>
           </div>
           <div class="col-md-6">
             <div class="img-content">
-              <img class="img-responsive" src="assets/images/case-study/case-study-img1.png" alt="">
+              <!-- <img class="img-responsive" src="assets/images/case-study/case-study-img1.png" alt=""> -->
+              <img class="img-responsive" src="assets/images/case-study/case-study-img2.png" alt="">
+              
             </div>
           </div>
         </div>
@@ -156,19 +158,20 @@
         <div class="row">
           <div class="col-md-6">
             <div class="img-content">
-              <img class="img-responsive" src="assets/images/case-study/case-study-img2.png" alt="">
+              <!-- <img class="img-responsive" src="assets/images/case-study/case-study-img2.png" alt=""> -->
+              <img class="img-responsive" src="assets/images/case-study/case-study-img1.png" alt="">
             </div>
           </div>
           <div class="col-md-6">
             <!-- inner sub-title -->
             <div class="content">
               <h4 class="inner-title">¿Cómo puedo publicar una sala?</h4>
-              <p class="case-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euiyd tincidunt ut laoreet dolore magna aliquam nibh utpat.Ullamcorper suscipit lobo nibh euiyd tinci- dunt ut laoreet.</p>
+              <p class="case-description">Si dispones de uno o varios espacios que se encuentren bien acondicionados para realizar reuniones o eventos relacionados con el entorno laboral y que no siempre estén ocupados, éste es tu sitio. </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex unde soluta, nesciunt consequuntur accusamus sint! Eaque quod consectetur laborum quae repudiandae illum hic explicabo sunt perferendis. Voluptas, fugiat eos sed!
+                Nosotros te ayudamos a conseguir que tu espacio tenga una mayor difusión, llegando al alcance de más personas. Vas a conseguir así tener un mayor número de clientes y una mayor rentabilidad de tu local.  
               </p>
               <!-- View More Details -->
-              <a class="btn btn-default btn-main" href="#" role="button">View More</a>
+              <a class="btn btn-default btn-main" href="#" role="button">Saber más</a>
             </div>
           </div>
         </div>
@@ -199,8 +202,8 @@
                     Criterios de Calidad, incluyendo la normativa de higiene, limpieza y desinfección. 
                   </p>
                   <div class="author">
-                    <img src="assets/images/clients-img1.png" alt="Clients">                    
-                    <h3 class="author-name">Spounge Bob</h3>
+                    <img src="assets/images/ceo-png.png" width="100px" alt="Clients">                    
+                    <h3 class="author-name">Bob Spounge </h3>
                     <span class="designation">CEO at PinPoint</span>
                   </div>
                 </div>
@@ -218,9 +221,9 @@
                      todas aquellas personas que necesitan disponer de un espacio para reuniones o eventos.
                   </p>
                   <div class="author">
-                    <img src="assets/images/yo.jpg" width="75px" id="yo-foto">
+                    <img src="assets/images/yo2.png" width="75px" id="yo-foto" alt="Clients">
                     <h3 class="author-name">Mariola Ortín</h3>
-                    <span class="designation">FrontEnd Developer PinPoint Space</span>
+                    <span class="designation">FrontEnd Developer at PinPoint Space</span>
                   </div>
                 </div>
                 </div>
@@ -319,23 +322,21 @@
     </footer>
 
 
+    <!-- JQuery -->
     <script src="assets/plugins/jquery.min.js"></script>
-
+      <!-- bootstrap -->
     <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
     <!-- slick slider -->
     <script src="assets/plugins/slick/slick.min.js"></script>
     <!-- filter -->
-    <script src="assets/plugins/filterizr/jquery.filterizr.min.js"></script>
+    <!-- <script src="assets/plugins/filterizr/jquery.filterizr.min.js"></script> -->
     <!-- Lightbox -->
     <script src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
     <!-- Parallax -->
     <script src="assets/plugins/parallax.min.js"></script>
     <!-- Video -->
-    <script src="assets/plugins/jquery.vide.js"></script>
-    <!-- google map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
-    <script src="assets/plugins/google-map/gmap.js"></script>
-
+    <!-- <script src="assets/plugins/jquery.vide.js"></script> -->
+   
     <script src="assets/js/script.js"></script>
     </body>
 
