@@ -1,3 +1,7 @@
+<!-- Esta página nos permite ver que estamos correctamente logeados -->
+@extends('layouts.app')
+
+@section('content')
 <div class="box box-info padding-1">
     <div class="box-body">
         
@@ -16,8 +20,10 @@
             {{ Form::text('capacity', $space->capacity, ['class' => 'form-control' . ($errors->has('capacity') ? ' is-invalid' : ''), 'placeholder' => 'Capacity']) }}
             {!! $errors->first('capacity', '<div class="invalid-feedback">:message</p>') !!}
         </div>
-
     </div>
+
+    
+
     <div class="box-footer mt20">
         <button type="submit" class="btn btn-primary">Submit</button>
     </div>
