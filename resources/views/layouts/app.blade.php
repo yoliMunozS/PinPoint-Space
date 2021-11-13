@@ -172,8 +172,7 @@
       <!-- Redirección a alquila tu espacio -->
         <li class="nav-item"><a href="{{ url('/spaces') }}">Spaces</a></li>
 
-      <!-- Redirección a contact -->
-        <li><a href="">Contact</a></li>
+      
         
         @guest
         @if (Route::has('login'))
@@ -182,11 +181,11 @@
             </li>
         @endif
 
-        @if (Route::has('register'))
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('register') }}">Create an account</a>
-            </li>
-        @endif
+        
+
+        <!-- Redirección a contact -->
+        <li><a href="">Contact</a></li>
+
     @else
         <li class="nav-item dropdown">
             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

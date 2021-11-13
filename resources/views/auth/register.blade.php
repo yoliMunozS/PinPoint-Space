@@ -2,12 +2,16 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
-
+            
+                <div class="card-header"></div><br><br>
+                <div class="title text-left">
+                    <h2>Estás a un paso de unirte a nuestra comunidad PinPoint</h2>
+                </div>
                 <div class="card-body">
+                    
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
@@ -59,12 +63,13 @@
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
-                        </div>
+                        </div><br>
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
+                                <button type="submit" class="btn btn-default btn-main">
+                                    <!-- {{ __('Register') }} -->
+                                    Únete
                                 </button>
                             </div>
                         </div>
@@ -74,4 +79,5 @@
         </div>
     </div>
 </div>
+
 @endsection

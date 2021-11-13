@@ -11,13 +11,13 @@
                 <div class="card">
                     <div class="card-header">
                         <div style="display: flex; justify-content: space-between; align-items: center;">
-
-                            <span id="card_title">
-                                {{ __('Booking') }}
-                            </span>
+                        <div class="title text-left">
+                            <h2>Bookings</h2><br>
+                        </div>
+                            
 
                              <div class="float-right">
-                                <a href="{{ route('bookings.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
+                                <a href="{{ route('bookings.create') }}" class="btn btn-default btn-main"  data-placement="left">
                                   {{ __('Create New') }}
                                 </a>
                               </div>

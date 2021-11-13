@@ -88,12 +88,18 @@
         <li><a href="{{ url('/home') }}">Home</a></li>
 
       <!-- Redirección a espacios -->
-        <li><a href="">Spaces</a></li>
+        <li><a href="{{ url('/spaces') }}">Spaces</a></li>
         
       <!-- Redirección a login -->
       @if (Route::has('login'))
         <li class="nav-item"><a class="nav-link" href="{{ route('login') }}"> {{ __('Login') }} </a></li>
       @endif
+
+      @if (Route::has('register'))
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('register') }}">Create an account</a>
+            </li>
+        @endif
 
       <!-- Redirección a contact -->
         <li><a href="">Contact</a></li>
