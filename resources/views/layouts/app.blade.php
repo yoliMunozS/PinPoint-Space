@@ -167,10 +167,10 @@
         <li><a href="{{ url('/home') }}">Home</a></li>
 
       <!-- Redirección a reservas -->
-        <li><a href="">Bookings</a></li>
+        <li><a href="{{ url('/bookings') }}">Bookings</a></li>
         
       <!-- Redirección a alquila tu espacio -->
-        <li class="nav-item"><a href="">Register your Space</a></li>
+        <li class="nav-item"><a href="{{ url('/spaces') }}">Spaces</a></li>
 
       <!-- Redirección a contact -->
         <li><a href="">Contact</a></li>
@@ -184,7 +184,7 @@
 
         @if (Route::has('register'))
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                <a class="nav-link" href="{{ route('register') }}">Create an account</a>
             </li>
         @endif
     @else
@@ -226,7 +226,7 @@
     </div>
   </header>
 
-
+  <br><br>
 <main class="py-4">
             @yield('content')
 </main>
@@ -288,13 +288,11 @@
                           <!-- Redirección a home -->
                             <li><a href="{{ url('/home') }}">Home</a></li>
 
-                          <!-- Redirección a espacios -->
-                            <li><a href="">Espacios</a></li>
+                          <!-- Redirección a bookings - Reserva de espacios -->
+                            <li><a href="{{ url('/bookings') }}">Bookings</a></li>
 
-                          <!-- Redirección a login -->
-                          @if (Route::has('login'))
-                            <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
-                          @endif
+                          <!-- Redirección a Spaces - Registro de espacios -->
+                            <li><a class="nav-link" href="{{ url('/spaces') }}">Spaces</a></li>                          
 
                           <!-- Redirección a contact -->
                             <li><a href="">Contact</a></li>
@@ -322,14 +320,11 @@
   <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
   <!-- slick slider -->
   <script src="assets/plugins/slick/slick.min.js"></script>
-  <!-- filter -->
-  <!-- <script src="assets/plugins/filterizr/jquery.filterizr.min.js"></script> -->
   <!-- Lightbox -->
   <script src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
   <!-- Parallax -->
   <script src="assets/plugins/parallax.min.js"></script>
-  <!-- Video -->
-  <!-- <script src="assets/plugins/jquery.vide.js"></script> -->
+  
 
   <script src="assets/js/script.js"></script>
   </body>
