@@ -1,6 +1,9 @@
+<!-- Página que nos permite logearnos en nuestra web y comprobar que los datos de acceso son correctos -->
 @extends('layouts.app')
 
 @section('content')
+
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -53,7 +56,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">                            
-                                <button type="submit" class="btn btn-primary" href="{{ route('loginIn') }}">
+                                <button type="submit" class="btn btn-primary" href="{{ url('/login') }}">
                                     {{ __('Login') }}
                                 </button>
                                 

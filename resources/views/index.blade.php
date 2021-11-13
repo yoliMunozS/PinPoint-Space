@@ -121,7 +121,7 @@
 
   <section class="case-study">
     <div class="text-center">
-      <h2 class="title">Spaces that you need</h2>
+      <h2 class="title">The Space that you need</h2>
     </div>
 
     <!-- PinPoint Description
