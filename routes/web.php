@@ -20,7 +20,6 @@ Route::get('/', function () {
     return view('index');
 });
 
-
 Route::get('/index', function () {
     return view('index');
 });
@@ -39,6 +38,9 @@ Route::get('/loginIn', function () {
 Auth::routes();
 
 Route::get('/loginIn', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/{id}/space/index', [\App\Http\Controllers\loginController::class, 'show']);
+Route::get('/{id}/booking/index', [\App\Http\Controllers\loginController::class, 'show']);
+
 
 // Lo comento por repetición
 // Auth::routes();

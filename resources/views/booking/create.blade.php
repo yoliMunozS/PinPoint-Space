@@ -5,26 +5,36 @@
 @endsection
 
 @section('content')
-    <section class="content container-fluid">
-        <div class="row">
-            <div class="col-md-12">
 
-                @includeif('partials.errors')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header"></div><br>
+                
+                <div class="title text-left">
+                    <h2>Create booking</h2>
+                </div>
+                <div class="card-body">
 
-                <div class="card card-default">
-                    <div class="card-header">
-                        <span class="card-title">Create Booking</span>
-                    </div>
-                    <div class="card-body">
-                        <form method="POST" action="{{ route('bookings.store') }}"  role="form" enctype="multipart/form-data">
-                            @csrf
+                    @includeif('partials.errors')
 
-                            @include('booking.form')
+                    <div class="card card-default">
+                        <div class="card-header">
+                            <span class="card-title"></span>
+                        </div>
+                        <div class="card-body">
+                            <form method="POST" action="{{ route('bookings.store') }}"  role="form" enctype="multipart/form-data">
+                                @csrf
 
-                        </form>
-                    </div>
+                                @include('booking.form')
+
+                            </form>
+                        </div>
+                    </div>       
                 </div>
             </div>
         </div>
-    </section>
+    </div>   
+</div>   
 @endsection

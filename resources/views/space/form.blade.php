@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
 <div class="box box-info padding-1">
     <div class="box-body">
         
@@ -22,3 +25,4 @@
         <button type="submit" class="btn btn-primary">Submit</button>
     </div>
 </div>
+@endsection

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class loginController extends Controller
 {
@@ -11,10 +12,10 @@ class loginController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id)
     {
-        //
         return ("loginIn");
+        
     }
 
     /**
@@ -46,7 +47,7 @@ class loginController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('index', compact('id'));
     }
 
     /**

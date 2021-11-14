@@ -29,8 +29,8 @@
       #map_canvas {
         height: 100%;
       } -->
-      <!-- /* Optional: Makes the sample page fill the window. */ -->
-    </style>
+      <!-- /* Optional: Makes the sample page fill the window. */
+    </style> -->
     <script src="assets/plugins/modernizr.min.js"></script>
   </head>
   <body>
@@ -92,7 +92,10 @@
         
       <!-- Redirección a login -->
       @if (Route::has('login'))
-        <li class="nav-item"><a class="nav-link" href="{{ route('login') }}"> {{ __('Login') }} </a></li>
+        <li class="nav-item">
+           {{-- modificada ruta de redirección del login --}}
+          <a class="nav-link" href="{{ url('loginIn') }}">Login</a>
+        </li>
       @endif
 
       @if (Route::has('register'))
@@ -303,7 +306,7 @@
 
                           <!-- Redirección a login -->
                           @if (Route::has('login'))
-                            <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
+                            <li><a class="nav-link" href="{{ url('loginIn') }}">Login</a></li>
                           @endif
 
                           <!-- Redirección a contact -->
