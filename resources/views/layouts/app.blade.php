@@ -9,21 +9,21 @@
 
     <!-- Modificación de todas las rutas del los href -faltaba subir un nivel-  -->
 
-    <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="../assets/plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/bootstrap.min.css">
     <!-- ThemeFisher Icon -->
-    <link rel="stylesheet" href="../assets/plugins/themefisher-fonts/themefisher-fonts.css">
+    <link rel="stylesheet" href="assets/plugins/themefisher-fonts/themefisher-fonts.css">
     <!-- Light Box -->
-    <link rel="stylesheet" href="../assets/plugins/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="assets/plugins/magnific-popup/magnific-popup.css">
     <!-- animation css -->
-    <link rel="stylesheet" href="../assets/plugins/animate/animate.css">
+    <link rel="stylesheet" href="assets/plugins/animate/animate.css">
     <!-- slick slider -->
-    <link rel="stylesheet" href="../assets/plugins/slick/slick.css">
+    <link rel="stylesheet" href="assets/plugins/slick/slick.css">
 
     <!-- Revolution Slider -->
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- <style>
       /* Always set the map height explicitly to define the size of the div
@@ -34,7 +34,7 @@
       } -->
       <!-- /* Optional: Makes the sample page fill the window. */
     </style> -->
-    <script src="../assets/plugins/modernizr.min.js"></script>
+    <script src="assets/plugins/modernizr.min.js"></script>
   </head>
   <body>
     <!--[if lt IE 8]>
@@ -44,7 +44,7 @@
   <!-- Loader to display before content Load-->
   <div class="loading">
 
-    <img src="../assets/img/loader.gif" alt="">
+    <img src="assets/img/loader.gif" alt="">
 
     <div class="windows8 loading-position">
       <div class="wBall" id="wBall_1">
@@ -79,7 +79,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand logo" href="{{ url('/home')}}">
-        <img src="../assets/images/logo/logo1-negro2.png" height="220%" img-align="left">
+        <img src="assets/images/logo/logo1-negro2.png" height="220%" img-align="left">
       </a>
     </div>
 
@@ -132,7 +132,7 @@
 
 <!-- Hero Area -section
   =========================-->
-  <header class="hero-area th-fullpage" data-parallax="scroll" data-image-src="../assets/images/slider/bg-1.jpg">
+  <header class="hero-area th-fullpage" data-parallax="scroll" data-image-src="assets/images/slider/bg-1.jpg" height="30%">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -232,17 +232,17 @@
 
 
   <!-- JQuery -->
-  <script src="../assets/plugins/jquery.min.js"></script>
+  <script src="assets/plugins/jquery.min.js"></script>
     <!-- bootstrap -->
-  <script src="../assets/plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
   <!-- slick slider -->
-  <script src="../assets/plugins/slick/slick.min.js"></script>
+  <script src="assets/plugins/slick/slick.min.js"></script>
   <!-- Lightbox -->
-  <script src="../assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
   <!-- Parallax -->
-  <script src="../assets/plugins/parallax.min.js"></script>
+  <script src="assets/plugins/parallax.min.js"></script>
 
-  <script src="../assets/js/script.js"></script>
+  <script src="assets/js/script.js"></script>
 
   </body>
 

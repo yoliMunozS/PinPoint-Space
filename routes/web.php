@@ -15,7 +15,7 @@ use App\Http\Controllers\BookingController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//Rutas de inicio
 Route::get('/', function () {
     return view('index');
 });
@@ -27,10 +27,12 @@ Route::get('/home', function () {
     return view('index');
 });
 
+//Ruta para cuando ya estás registrado
 Route::get('/loginIn', function () {
     return view('loginIn');
 });
 
+//Ruta de prueba
 // Route::get('/index2', function () {
 //     return view('index2');
 // });

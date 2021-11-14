@@ -93,7 +93,7 @@
       <!-- Redirección a login -->
       @if (Route::has('login'))
         <li class="nav-item">
-           {{-- modificada ruta de redirección del login --}}
+           <!--  modificada ruta de redirección del login  -->
           <a class="nav-link" href="{{ url('loginIn') }}">Login</a>
         </li>
       @endif
