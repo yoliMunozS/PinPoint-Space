@@ -47,14 +47,18 @@ class BookingController extends Controller
 
         $space_id = $request->space_id;
 
+        // Se guarda en $bookings todas las reservas del espacio solicitado
         $bookings = Booking::All()->where('space_id', '=', $space_id);
 
+        // Se comprueba si hay alguna reserva existente en la franja horaria solicitada, si se encuentra alguna coincidencia, se devuelve error
         foreach ($bookings as $book) {
             if (!($request->end <= $book->start or $request->start >= $book->end)) {
                 return redirect()->route('bookings.index')
                     ->with('success', 'Sala ocupada.');
             };
         }
+
+        // Si no hay coincidencias, se realiza reserva de sala
         $booking = Booking::create($request->all());
         return redirect()->route('bookings.index')
             ->with('success', 'Booking created successfully.');
