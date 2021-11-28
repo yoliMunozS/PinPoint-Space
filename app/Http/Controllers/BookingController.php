@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Booking;
+use App\Models\Space;
 use Illuminate\Http\Request;
 
 /**
@@ -114,9 +115,16 @@ class BookingController extends Controller
      */
     public function destroy($id)
     {
-        $booking = Booking::find($id)->delete();
-
-        return redirect()->route('bookings.index')
-            ->with('success', 'Booking deleted successfully');
+        $booking = Booking::find($id);
+        echo Space::find($booking->space_id)->user_id;
+        //Se verifica si el usuario es propietario del espacio o de la reserva
+        if ($booking->user_id == auth()->id() || Space::find($booking->space_id)->user_id == auth()->id()) {
+            $booking = Booking::find($id)->delete();
+            return redirect()->route('spaces.index')
+                ->with('success', 'Espacio eliminado con éxito.');
+        } else {
+            return redirect()->route('spaces.index')
+                ->with('failure', 'No eres propietario de la reserva.');
+        }
     }
 }
