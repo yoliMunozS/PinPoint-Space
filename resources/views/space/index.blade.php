@@ -49,7 +49,8 @@
                                             <td>{{ ++$i }}</td>
                                             
 											<td>{{ $space->name }}</td>
-											<td>{{ $space->user_id }}</td>
+											{{-- <td>{{ $space->user_id }}</td> --}}
+											<td>{{ $space->user->name }}</td>
 											<td>{{ $space->capacity }}</td>
 
                                             <td>

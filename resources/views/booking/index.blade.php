@@ -51,7 +51,8 @@
                                             <td>{{ ++$i }}</td>
                                             
 											<td>{{ $booking->space_id }}</td>
-											<td>{{ $booking->user_id }}</td>
+											{{-- <td>{{ $booking->user_id }}</td> --}}
+											<td>{{ $booking->space->name}}</td>
 											<td>{{ $booking->start }}</td>
 											<td>{{ $booking->end }}</td>
 											<td>{{ $booking->assistants }}</td>
