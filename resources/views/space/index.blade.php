@@ -12,7 +12,7 @@
                     <div class="card-header">
                         <div style="display: flex; justify-content: space-between; align-items: center;">
                             <div class="title text-left">
-                                <h2>Spaces</h2>
+                                <h2>My Spaces</h2>
                             </div>
                             
 

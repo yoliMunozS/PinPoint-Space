@@ -12,7 +12,7 @@
                     <div class="card-header">
                         <div style="display: flex; justify-content: space-between; align-items: center;">
                         <div class="title text-left">
-                            <h2>Bookings</h2><br>
+                            <h2>My Bookings</h2><br>
                         </div>
                             
 
@@ -36,8 +36,8 @@
                                     <tr>
                                         <th>No</th>
                                         
-										<th>Space Id</th>
-										<th>User Id</th>
+										<th>Space Name</th>
+										<!-- <th>User Id</th> -->
 										<th>Start</th>
 										<th>End</th>
 										<th>Assistants</th>
@@ -50,8 +50,8 @@
                                         <tr>
                                             <td>{{ ++$i }}</td>
                                             
-											<td>{{ $booking->space_id }}</td>
-											{{-- <td>{{ $booking->user_id }}</td> --}}
+											<!-- <td>{{ $booking->space_id }}</td> -->
+											<!-- {{-- <td>{{ $booking->user_id }}</td> --}} -->
 											<td>{{ $booking->space->name}}</td>
 											<td>{{ $booking->start }}</td>
 											<td>{{ $booking->end }}</td>
@@ -77,7 +77,7 @@
             </div>
         </div>
     </div>
-    
+
 <br><br>
 
 
@@ -111,7 +111,7 @@
                                 <tr>
                                     <th>No</th>
                                     
-                                    <th>Space Id</th>
+                                    <th>Space Name</th>
                                     <!-- <th>User Id</th> -->
                                     <th>Start</th>
                                     <th>End</th>
@@ -124,8 +124,8 @@
                                 @foreach ($bookings as $booking)
                                     <tr>
                                         <td>{{ ++$i }}</td>
-                                        
-                                        <td>{{ $booking->space_id }}</td>
+                                        <td>{{ $booking->space->name}}</td>
+                                        <!-- <td>{{ $booking->space_id }}</td> -->
                                         <td>{{ $booking->start }}</td>
                                         <td>{{ $booking->end }}</td>
                                         <td>{{ $booking->assistants }}</td>
