@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.appcreate')
 
 @section('template_title')
-    Create Space
+    Create Booking
 @endsection
 
 @section('content')
@@ -13,7 +13,7 @@
                 <div class="card-header"></div><br>
                 
                 <div class="title text-left">
-                    <h2>Create space</h2>
+                    <h2>Create a space</h2>
                 </div>
                 <div class="card-body">
 

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.appcreate')
 
 @section('template_title')
     Create Booking
@@ -13,7 +13,7 @@
                 <div class="card-header"></div><br>
                 
                 <div class="title text-left">
-                    <h2>Create booking</h2>
+                    <h2>Create a booking</h2>
                 </div>
                 <div class="card-body">
 
@@ -36,5 +36,5 @@
             </div>
         </div>
     </div>   
-</div>   
+</div>
 @endsection
