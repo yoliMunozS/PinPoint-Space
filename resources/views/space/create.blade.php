@@ -1,7 +1,7 @@
 @extends('layouts.appcreate')
 
 @section('template_title')
-    Create Booking
+    Create Space
 @endsection
 
 @section('content')
@@ -13,7 +13,7 @@
                 <div class="card-header"></div><br>
                 
                 <div class="title text-left">
-                    <h2>Create a space</h2>
+                    <h2>Create a booking</h2>
                 </div>
                 <div class="card-body">
 
@@ -31,10 +31,10 @@
 
                             </form>
                         </div>
-                    </div>
+                    </div>       
                 </div>
             </div>
         </div>
-    </div> 
+    </div>   
 </div>
 @endsection
