@@ -51,7 +51,12 @@
                                             <td>{{ ++$i }}</td>
                                             
 											<td>{{ $space->name }}</td>
+<<<<<<< HEAD
 											<!-- <td>{{ $space->user_id }}</td> -->
+=======
+											{{-- <td>{{ $space->user_id }}</td> --}}
+											<td>{{ $space->user->name }}</td>
+>>>>>>> 580fff6abce1f36f366b3754c55db593fd258885
 											<td>{{ $space->capacity }}</td>
 
                                             <td>

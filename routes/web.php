@@ -54,3 +54,6 @@ Route::resource('spaces', SpaceController::class);
 
 // Enrutado de reserva espacios
 Route::resource('bookings', BookingController::class);
+
+// Ruta peticiones pendientes de espacios 
+//Route::get('space/{id}',[SpaceController::class,'show']) -> name('space.show');

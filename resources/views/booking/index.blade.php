@@ -65,6 +65,7 @@
                                             </form>
                                         </td>
                                     </tr>
+<<<<<<< HEAD
                                 @endforeach
                             </tbody>
                         </table>
@@ -77,6 +78,20 @@
 </div>
 
 <br><br>
+=======
+                                </thead>
+                                <tbody>
+                                    @foreach ($bookings as $booking)
+                                        <tr>
+                                            <td>{{ ++$i }}</td>
+                                            
+											<td>{{ $booking->space_id }}</td>
+											{{-- <td>{{ $booking->user_id }}</td> --}}
+											<td>{{ $booking->space->name}}</td>
+											<td>{{ $booking->start }}</td>
+											<td>{{ $booking->end }}</td>
+											<td>{{ $booking->assistants }}</td>
+>>>>>>> 580fff6abce1f36f366b3754c55db593fd258885
 
 
 <!-- Tabla para observar las reservas de mis espacios -->
