@@ -5,8 +5,6 @@
 @endsection
 
 @section('content')
-
-<!-- Tabla para mis espacios -->
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
@@ -14,7 +12,7 @@
                     <div class="card-header">
                         <div style="display: flex; justify-content: space-between; align-items: center;">
                             <div class="title text-left">
-                                <h2>My Spaces</h2>
+                                <h2>Spaces</h2>
                             </div>
                             
 
@@ -39,7 +37,7 @@
                                         <th>No</th>
                                         
 										<th>Name</th>
-										<!-- <th>User Id</th> -->
+										<th>User Id</th>
 										<th>Capacity</th>
 
                                         <th></th>
@@ -51,12 +49,8 @@
                                             <td>{{ ++$i }}</td>
                                             
 											<td>{{ $space->name }}</td>
-<<<<<<< HEAD
-											<!-- <td>{{ $space->user_id }}</td> -->
-=======
 											{{-- <td>{{ $space->user_id }}</td> --}}
 											<td>{{ $space->user->name }}</td>
->>>>>>> 580fff6abce1f36f366b3754c55db593fd258885
 											<td>{{ $space->capacity }}</td>
 
                                             <td>
@@ -79,7 +73,8 @@
             </div>
         </div>
     </div>
-
+    
+    
     <br><br>
 
 
