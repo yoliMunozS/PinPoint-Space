@@ -22,8 +22,8 @@
 
     </div>
     <div class="box-footer mt20">
-        <button type="submit" class="btn btn-primary">
-            <!-- {{ __('Register') }} -->
+        <button type="submit" class="btn btn-primary" href="{{ url('/spaces') }}">     
+            
             Submit
         </button>
     </div>

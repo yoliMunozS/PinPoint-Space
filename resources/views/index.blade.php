@@ -86,9 +86,6 @@
 
       <!-- Redirección a home -->
         <li><a href="{{ url('/home') }}">Home</a></li>
-
-      <!-- Redirección a espacios -->
-        <li><a href="{{ url('/spaces') }}">Spaces</a></li>
         
       <!-- Redirección a login -->
       @if (Route::has('login'))
