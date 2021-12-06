@@ -44,19 +44,18 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($spaces as $space)
+                                    @foreach ($myspaces as $myspace)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-                                            
-											<td>{{ $space->name }}</td>
-											{{-- <td>{{ $space->user_id }}</td> --}}
-											<td>{{ $space->user->name }}</td>
-											<td>{{ $space->capacity }}</td>
+
+                                            <td>{{ $myspace->name }}</td>
+											<td>{{ $myspace->user->name }}</td>
+											<td>{{ $myspace->capacity }}</td>
 
                                             <td>
-                                                <form action="{{ route('spaces.destroy',$space->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('spaces.show',$space->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('spaces.edit',$space->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>
+                                                <form action="{{ route('spaces.destroy',$myspace->id) }}" method="POST">
+                                                    <a class="btn btn-sm btn-primary " href="{{ route('spaces.show',$myspace->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
+                                                    <a class="btn btn-sm btn-success" href="{{ route('spaces.edit',$myspace->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Delete</button>
