@@ -116,6 +116,7 @@
                                             <td>
                                                 <form action="{{ route('spaces.destroy',$space->id) }}" method="POST">
                                                     <a class="btn btn-sm btn-primary " href="{{ route('spaces.show',$space->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
+                                                    @csrf
                                                 </form>
                                             </td>
                                         </tr>
