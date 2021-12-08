@@ -18,8 +18,8 @@ class SpaceController extends Controller
      */
     public function index()
     {
-        //Todos los espacios
-        $spaces = Space::paginate();
+        //Todos los espacios salvo los del usuario
+        $spaces = Space::where('user_id', '!=', auth()->user()->id)->paginate();
 
         //Espacios del usuario logado
         $myspaces = Space::where('user_id', auth()->user()->id)->paginate();
