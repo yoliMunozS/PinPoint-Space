@@ -19,9 +19,14 @@ class BookingController extends Controller
      */
     public function index()
     {
-        $bookings = Booking::paginate();
+        //Reservas de mis espacios
+        $myspaces = Space::where('user_id', auth()->user()->id);
+        $myspacesbookings = Booking::where('space_id', )->paginate();
 
-        return view('booking.index', compact('bookings'))
+        //Mis reservas
+        $bookings = Booking::where('user_id', auth()->user()->id)->paginate();
+
+        return view('booking.index', compact('bookings', 'myspacesbookings'))
             ->with('i', (request()->input('page', 1) - 1) * $bookings->perPage());
     }
 
