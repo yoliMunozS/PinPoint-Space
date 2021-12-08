@@ -49,9 +49,7 @@
                                     @foreach ($bookings as $booking)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-                                            
-											<!-- <td>{{ $booking->space_id }}</td> -->
-											<!-- {{-- <td>{{ $booking->user_id }}</td> --}} -->
+                                           
 											<td>{{ $booking->space->name}}</td>
 											<td>{{ $booking->start }}</td>
 											<td>{{ $booking->end }}</td>
@@ -121,19 +119,20 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($bookings as $booking)
+                                @foreach ($myspacesbookings as $myspacesbooking)
                                     <tr>
                                         <td>{{ ++$i }}</td>
-                                        <td>{{ $booking->space->name}}</td>
-                                        <!-- <td>{{ $booking->space_id }}</td> -->
-                                        <td>{{ $booking->start }}</td>
-                                        <td>{{ $booking->end }}</td>
-                                        <td>{{ $booking->assistants }}</td>
+
+                                        <td>{{ $myspacesbooking->space->name}}</td>
+                                        {{-- <!-- <td>{{ $myspacesbooking->space_id }}</td> --> --}}
+                                        <td>{{ $myspacesbooking->start }}</td>
+                                        <td>{{ $myspacesbooking->end }}</td>
+                                        <td>{{ $myspacesbooking->assistants }}</td>
 
                                         <td>
-                                            <form action="{{ route('bookings.destroy',$booking->id) }}" method="POST">
-                                                <a class="btn btn-sm btn-primary " href="{{ route('bookings.show',$booking->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
-                                                <a class="btn btn-sm btn-success" href="{{ route('bookings.edit',$booking->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>
+                                            <form action="{{ route('bookings.destroy',$myspacesbooking->id) }}" method="POST">
+                                                <a class="btn btn-sm btn-primary " href="{{ route('bookings.show',$myspacesbooking->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
+                                                <a class="btn btn-sm btn-success" href="{{ route('bookings.edit',$myspacesbooking->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Delete</button>
