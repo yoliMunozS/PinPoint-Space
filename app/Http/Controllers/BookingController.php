@@ -20,8 +20,15 @@ class BookingController extends Controller
     public function index()
     {
         //Reservas de mis espacios
-        $myspaces = Space::where('user_id', auth()->user()->id);
-        $myspacesbookings = Booking::where('space_id', )->paginate();
+        $myspacesbookings = Booking::query()
+            ->addSelect([
+                'user_id_owner' => Space::select('user_id')
+                    ->whereColumn('spaces.id', 'bookings.space_id')
+                    ->take(1)
+            ])
+            ->paginate();
+        $myspacesbookings = $myspacesbookings->where('user_id_owner', auth()->user()->id);
+
 
         //Mis reservas
         $bookings = Booking::where('user_id', auth()->user()->id)->paginate();
