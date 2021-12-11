@@ -1,20 +1,21 @@
-@extends('layouts.app')
+@extends('layouts.appcreate2')
 
 @section('template_title')
     Update Booking
 @endsection
 
 @section('content')
+
     <section class="content container-fluid">
-        <div class="">
+        <div class="">        
             <div class="col-md-12">
 
                 @includeif('partials.errors')
 
                 <div class="card card-default">
                     <div class="card-header">
-                        <span class="card-title">Update Booking</span>
-                    </div>
+                        <span class="card-title">Modifique los detalles de la reserva:</span>
+                    </div><br>
                     <div class="card-body">
                         <form method="POST" action="{{ route('bookings.update', $booking->id) }}"  role="form" enctype="multipart/form-data">
                             {{ method_field('PATCH') }}
@@ -28,4 +29,7 @@
             </div>
         </div>
     </section>
+
+
+
 @endsection

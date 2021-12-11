@@ -1,10 +1,11 @@
-@extends('layouts.app')
+@extends('layouts.appcreate2')
 
 @section('template_title')
     Update Space
 @endsection
 
 @section('content')
+
     <section class="content container-fluid">
         <div class="">
             <div class="col-md-12">
