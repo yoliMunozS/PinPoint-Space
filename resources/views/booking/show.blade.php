@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.appcreate')
 
 @section('template_title')
     {{ $booking->name ?? 'Show Booking' }}
