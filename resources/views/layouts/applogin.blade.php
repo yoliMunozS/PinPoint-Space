@@ -7,6 +7,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Modificación de todas las rutas del los href  -->
+
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
@@ -22,15 +24,7 @@
 
     <!-- Revolution Slider -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map_canvas {
-        height: 100%;
-      } -->
-      <!-- /* Optional: Makes the sample page fill the window. */
-    </style> -->
+    </style> 
     <script src="assets/plugins/modernizr.min.js"></script>
   </head>
   <body>
@@ -86,163 +80,53 @@
 
       <!-- Redirección a home -->
         <li><a href="{{ url('/home') }}">Home</a></li>
-        
-      <!-- Redirección a login -->
-      @if (Route::has('login'))
-        <li class="nav-item">
-           <!--  modificada ruta de redirección del login  -->
-          <a class="nav-link" href="{{ url('loginIn') }}">Login</a>
-        </li>
-      @endif
 
-      @if (Route::has('register'))
+      @guest
+          @if (Route::has('login'))
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url('loginIn') }}">Login</a>
+              </li>
+          @endif
+
+          @if (Route::has('register'))
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('register') }}">Create an account</a>
             </li>
         @endif
 
-      <!-- Redirección a contact -->
-        <li><a href="">Contact</a></li>
-        
+            <!-- Redirección a contact -->
+            <li><a href="">Contact</a></li>
+
+           @else
+            <li class="nav-item dropdown">
+                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                    {{ Auth::user()->name }}
+                </a>
+
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                                        document.getElementById('logout-form').submit();">
+                        {{ __('Logout') }}
+                    </a>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                </div>
+            </li>
+       @endguest
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
 </nav>
+<br><br>
 
- <!-- Hero Area -section
-  =========================-->
-  <header class="hero-area th-fullpage" data-parallax="scroll" data-image-src="assets/images/slider/bg-1.jpg">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>We know what you need,<br>
-            We Ensure Quality Spaces</h1>
-        </div>
-      </div>
-    </div>
-  </header>
-  
+<br><br>
+<main class="py-4">
+    @yield('content')
+</main>
 
- <!-- Secciones
-  =========================-->
-
-  <section class="case-study">
-    <div class="text-center">
-      <h2 class="title">The Space that you need</h2>
-    </div>
-
-    <!-- PinPoint Description
-      =========================-->
-    <div class="case-study-content">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <!-- inner sub-title -->
-            <div class="content">
-              <h4 class="inner-title">Los espacios para preparar tu reunión o evento</h4>
-              <p class="case-description">Disponemos de diferentes y nuevos espacios a diario para reuniones comerciales, exposiciones o diferentes eventos en Barcelona y alrededores. Encuentra fotografías, precios, opiniones y promociones de los mejores espacios en Barcelona.</p>
-              <p>
-                Encuentra el lugar ideal en Barcelona y su área metropolitana donde organizar y celebrar tu reunión de trabajo. ¿A qué esperas para descubrirlo?
-              </p>
-              <!-- View More Details -->
-              <a class="btn btn-default btn-main" href="#" role="button">Saber más</a>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="img-content">
-              <img class="img-responsive" src="assets/images/case-study/case-study-img2.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Case Study Description
-      bottom section -->
-    <div class="case-study-content">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="img-content">              
-              <img class="img-responsive" src="assets/images/case-study/case-study-img1.png" alt="">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <!-- inner sub-title -->
-            <div class="content">
-              <h4 class="inner-title">¿Cómo puedo publicar una sala?</h4>
-              <p class="case-description">Si dispones de uno o varios espacios que se encuentren bien acondicionados para realizar reuniones o eventos relacionados con el entorno laboral y que no siempre estén ocupados, éste es tu sitio. </p>
-              <p>
-                Nosotros te ayudamos a conseguir que tu espacio tenga una mayor difusión, llegando al alcance de más personas. Vas a conseguir así tener un mayor número de clientes y una mayor rentabilidad de tu local.  
-              </p>
-              <!-- View More Details -->
-              <a class="btn btn-default btn-main" href="{{ route('login') }}">Saber más</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-
-<!-- Opiniones Clientes
-=========================-->
-<section class="clients" data-parallax="scroll" data-image-src="assets/images/slider/bg-3.jpg">
-  <div class="section">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="title text-center">
-            <h2>Clients Opinion</h2>
-          </div>
-          <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 padding-0 slider-main">
-            <div class="testimonial-slider">
-              <div class="item">
-                <!-- Slider item -->
-                <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 padding-0">
-                <div class="testimonials-area">
-                  <div class="round-shape"></div>
-                  <p class="testimonials-description">Nuestros espacios son especialmente seleccionados 
-                    para una acogida perfecta. Nosotros no trabajamos con los que no respetan nuestros 
-                    Criterios de Calidad, incluyendo la normativa de higiene, limpieza y desinfección. 
-                  </p>
-                  <div class="author">
-                    <img src="assets/images/ceo-png.png" width="100px" alt="Clients">                    
-                    <h3 class="author-name">Bob Spounge </h3>
-                    <span class="designation">CEO at PinPoint</span>
-                  </div>
-                </div>
-                </div>
-                <!-- End Slider item -->
-              </div>
-              <div class="item"> 
-                <!-- Slider item -->
-                <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 padding-0"> 
-                <div class="testimonials-area"> 
-                   <div class="round-shape"></div>
-                   <p class="testimonials-description">Somos una empresa responsable y con muchas ganas de 
-                     dar una gran oportunidad para hacer reservas de espacios tanto para grandes, medianas 
-                     y pequeñas empresas. Además, incluímos reuniones para particulares, ya que nos preocupan 
-                     todas aquellas personas que necesitan disponer de un espacio para reuniones o eventos.
-                  </p>
-                  <div class="author">
-                    <img src="assets/images/yo2.png" width="75px" id="yo-foto" alt="Clients">
-                    <h3 class="author-name">Mariola Ortín</h3>
-                    <span class="designation">FrontEnd Developer at PinPoint Space</span>
-                  </div>
-                </div>
-                </div>
-                <!-- End Slider item -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div><!-- /.End row -->
-    </div>
-  </div>
-</section>
-
-
-  
 <footer class="footer">
         <div class="container">
             <div class="row">
@@ -298,13 +182,15 @@
                           <!-- Redirección a home -->
                             <li><a href="{{ url('/home') }}">Home</a></li>
 
-                          <!-- Redirección a login -->
-                          @if (Route::has('login'))
-                            <li><a class="nav-link" href="{{ url('loginIn') }}">Login</a></li>
-                          @endif
+                            <!-- Redirección a login -->
+                            @if (Route::has('login'))
+                                <li class="nav-item">
+                                  <a class="nav-link" href="{{ url('loginIn') }}">Login</a>
+                                </li>
+                            @endif
 
-                          <!-- Redirección a registrarse -->
-                          @if (Route::has('register'))
+                            <!-- Redirección a registrarse -->
+                            @if (Route::has('register'))
                               <li class="nav-item">
                                   <a class="nav-link" href="{{ route('register') }}">Create an account</a>
                               </li>
@@ -336,16 +222,12 @@
   <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
   <!-- slick slider -->
   <script src="assets/plugins/slick/slick.min.js"></script>
-  <!-- filter -->
-  <!-- <script src="assets/plugins/filterizr/jquery.filterizr.min.js"></script> -->
   <!-- Lightbox -->
   <script src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
   <!-- Parallax -->
   <script src="assets/plugins/parallax.min.js"></script>
-  <!-- Video -->
-  <!-- <script src="assets/plugins/jquery.vide.js"></script> -->
 
   <script src="assets/js/script.js"></script>
-  </body>
 
+  </body>
 </html>

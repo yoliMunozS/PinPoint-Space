@@ -1,5 +1,5 @@
 <!-- Página que nos permite logearnos en nuestra web y comprobar que los datos de acceso son correctos -->
-@extends('layouts.app')
+@extends('layouts.applogin')
 
 @section('content')
 
