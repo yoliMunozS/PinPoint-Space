@@ -109,8 +109,7 @@
                                 <tbody>
                                     @foreach ($spaces as $space)
                                         <tr>
-                                            <td>{{ ++$i }}</td>
-                                            
+                                            <td>{{ ++$i }}</td>                                           
 											<td>{{ $space->name }}</td>
 											<td>{{ $space->capacity }}</td>
                                             <td>
