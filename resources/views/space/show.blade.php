@@ -6,7 +6,7 @@
 
 @section('content')
 
-    <!-- <section class="content container-fluid"-->
+  <!-- <section class="content container-fluid"-->
   <section class="blog-single">
   	<div class="container">
   		<div class="row">
@@ -20,36 +20,28 @@
   			
             <!-- Imagen
             ============================== -->
-            <div class="blog-single-section-img">
-              <img src="..\assets\images\header\studio.jpg" alt="">
+            <div class="title text-center">
+              <img src="..\assets\images\header\studio.jpg">
             </div>
             <!-- Page Main Content
             ================================== -->
             <div class="blog-single-content">
-              <div class="blog-content-description">
-                <h3><a class="blog-content-title" href="#">Sabemos lo que necesitas. Reserva ya el espacio que más se ajuste a tus necesidades.</a></h3>
+              <div class="blog-content-description">          
+                <h3 class="footer-title">Sabemos lo que necesitas. Reserva ya el espacio que más se ajuste a tus necesidades.</h3>
+                <p><strong>CARACTERÍSTICAS:</strong></p><br>
                 <div class="meta">
                   <div class="date">
-                    <p><strong>Space Name</strong></p>
-                  </div>
-                  <div class="author">
-                    <p> {{ $space->name }}</p>
+                    <p><strong>Space Name  | </strong> {{ $space->name }}</p>
                   </div>
                 </div>
                 <div class="meta">
                   <div class="date">
-                    <p><strong>Capacity</strong></p>
-                  </div>
-                  <div class="author">
-                    <p> {{ $space->capacity }}  people</p>
+                    <p><strong>Capacity | </strong> {{ $space->capacity }}  people</p>
                   </div>
                 </div>
                 <div class="meta">
                   <div class="date">
-                    <p><strong>Host Nº</strong></p>
-                  </div>
-                  <div class="author">
-                    <p> {{ $space->user_id }} </p>
+                    <p><strong>Host Nº | </strong> {{ $space->user_id }} </p>
                   </div>
                 </div>
                 <br>
@@ -59,7 +51,7 @@
               <!-- Medidas de salud - info -->
               <br><br>
               <div class="blog-content-description">
-                <h4 class="blog-inner-heading">Medidas de seguridad y salud especiales  <i class="tf-ion-alert-circled"></i>  </h4>
+                <h3 class="footer-title">Medidas de seguridad y salud especiales  <i class="tf-ion-alert-circled"></i>  </h3>
                 
                 <p class="blog-description"> - Mascarillas y desinfectante de manos a disposición de los clientes
                 </br> - Limpieza del alojamiento realizada por empresas profesionales
