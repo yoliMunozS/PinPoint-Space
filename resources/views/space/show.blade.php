@@ -52,10 +52,12 @@
                     <p> {{ $space->user_id }} </p>
                   </div>
                 </div>
+                <br>
                 <p class="blog-description">Espacio ideal para tus reuniones o eventos en grupo.</p>
               </div>
               
               <!-- Medidas de salud - info -->
+              <br><br>
               <div class="blog-content-description">
                 <h4 class="blog-inner-heading">Medidas de seguridad y salud especiales  <i class="tf-ion-alert-circled"></i>  </h4>
                 
