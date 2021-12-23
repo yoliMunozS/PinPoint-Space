@@ -49,11 +49,11 @@ Route::get('/{id}/booking/index', [\App\Http\Controllers\loginController::class,
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// Enrutado de espacios 
-Route::resource('spaces', SpaceController::class);
+// Enrutado de espacios  sólo a usuarios registrados
+Route::resource('spaces', SpaceController::class)-> middleware('auth');
 
-// Enrutado de reserva espacios
-Route::resource('bookings', BookingController::class);
+// Enrutado de reserva espacios sólo a usuarios registrados
+Route::resource('bookings', BookingController::class) -> middleware('auth');
 
 // Ruta peticiones pendientes de espacios 
 //Route::get('space/{id}',[SpaceController::class,'show']) -> name('space.show');
