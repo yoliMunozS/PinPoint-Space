@@ -26,6 +26,8 @@ class Space extends Model
 		'capacity' => 'required',
     ];
 
+    public $timestamps = false;
+    
     protected $perPage = 20;
 
     /**
