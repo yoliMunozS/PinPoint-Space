@@ -13,7 +13,7 @@
                 <div class="card-header"></div><br>
                 
                 <div class="title text-left">
-                    <h2>Create a booking</h2>
+                    <h2>Create a space</h2>
                 </div>
                 <div class="card-body">
 

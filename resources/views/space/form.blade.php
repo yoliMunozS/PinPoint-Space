@@ -1,6 +1,6 @@
-@extends('layouts.app')
+{{-- @extends('layouts.app')
 
-@section('content')
+@section('content') --}}
 <div class="box box-info padding-1">
     <div class="box-body">
         
@@ -28,4 +28,4 @@
         </button>
     </div>
 </div>
-@endsection
+{{-- @endsection --}}
