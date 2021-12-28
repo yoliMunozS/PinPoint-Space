@@ -14,7 +14,8 @@
 
                 <div class="card card-default">
                     <div class="card-header">
-                        <span class="card-title">Update Space</span>
+                        <h3 class="card-title">Update Space</h3>
+                    </br>
                     </div>
                     <div class="card-body">
                         <form method="POST" action="{{ route('spaces.update', $space->id) }}"  role="form" enctype="multipart/form-data">

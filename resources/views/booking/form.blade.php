@@ -13,13 +13,17 @@
         </div>
         <div class="form-group">
             {{ Form::label('Start') }}
-            {{ Form::text('start', $booking->start, ['class' => 'form-control' . ($errors->has('start') ? ' is-invalid' : ''), 'placeholder' => 'Start']) }}
+            {{-- {{ Form::text('start', $booking->start, ['class' => 'form-control' . ($errors->has('start') ? ' is-invalid' : ''), 'placeholder' => 'Start']) }} --}}
+            {{ Form::date('start', $booking->start, ['class' => 'form-control' . ($errors->has('start') ? ' is-invalid' : ''), 'placeholder' => 'Start']) }}
             {!! $errors->first('start', '<div class="invalid-feedback">:message</p>') !!}
+               
         </div>
         <div class="form-group">
             {{ Form::label('End') }}
-            {{ Form::text('end', $booking->end, ['class' => 'form-control' . ($errors->has('end') ? ' is-invalid' : ''), 'placeholder' => 'End']) }}
+            {{-- {{ Form::text('end', $booking->end, ['class' => 'form-control' . ($errors->has('end') ? ' is-invalid' : ''), 'placeholder' => 'End']) }} --}}
+            {{ Form::date('end', $booking->end, ['class' => 'form-control' . ($errors->has('end') ? ' is-invalid' : ''), 'placeholder' => 'End']) }}
             {!! $errors->first('end', '<div class="invalid-feedback">:message</p>') !!}
+                
         </div>
         <div class="form-group">
             {{ Form::label('Assistants') }}

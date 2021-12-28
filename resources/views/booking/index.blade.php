@@ -51,8 +51,11 @@
                                             <td>{{ ++$i }}</td>
                                            
 											<td>{{ $booking->space->name}}</td>
-											<td>{{ $booking->start}}</td>
-											<td>{{ $booking->end }}</td>
+											{{-- <td>{{ $booking->start }}</td> --}}
+											{{-- <td>{{ date('d-m-y', strtotime($booking->start)) }}</td> --}}
+											<td>{{ \Carbon\Carbon::parse($booking->start)->format('d/m/Y') }}</td>
+											{{-- <td>{{ $booking->end }}</td> --}}
+                                            <td>{{ \Carbon\Carbon::parse($booking->end)->format('d/m/Y') }} </td>
 											<td>{{ $booking->assistants }}</td>
 
                                             <td>
@@ -121,8 +124,10 @@
 
                                         <td>{{ $myspacesbooking->space->name}}</td>
                                         {{-- <!-- <td>{{ $myspacesbooking->space_id }}</td> --> --}}
-                                        <td>{{ $myspacesbooking->start }}</td>
-                                        <td>{{ $myspacesbooking->end }}</td>
+                                        {{-- <td>{{ $myspacesbooking->start }}</td> --}}
+                                        <td>{{ \Carbon\Carbon::parse($myspacesbooking->start)->format('d/m/Y') }}</td>
+                                        <td>{{ \Carbon\Carbon::parse($myspacesbooking->end)->format('d/m/Y') }}</td>
+                                        {{-- <td>{{ $myspacesbooking->end }}</td> --}}
                                         <td>{{ $myspacesbooking->assistants }}</td>
 
                                         <td>

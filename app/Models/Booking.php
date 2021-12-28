@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 
 /**
  * Class Booking
@@ -23,11 +24,16 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Booking extends Model
 {
-    
+    // para cambiar el formato de fecha
+    protected $casts = [
+        'date' => 'date'
+    ];
+
     static $rules = [
 		'space_id' => 'required',
 		'user_id' => 'required',
 		'assistants' => 'required',
+        
     ];
 
     protected $perPage = 20;
@@ -37,7 +43,7 @@ class Booking extends Model
      *
      * @var array
      */
-    protected $fillable = ['space_id','user_id','start','end','assistants'];
+    protected $fillable = ['space_id','user_id','start','end','assistants', 'accepted'];
 
 
     /**
@@ -56,5 +62,6 @@ class Booking extends Model
         return $this->hasOne('App\Models\User', 'id', 'user_id');
     }
     
-
+    
+      
 }
