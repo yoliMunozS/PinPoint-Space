@@ -14,14 +14,16 @@
         <div class="form-group">
             {{ Form::label('Start') }}
             {{-- {{ Form::text('start', $booking->start, ['class' => 'form-control' . ($errors->has('start') ? ' is-invalid' : ''), 'placeholder' => 'Start']) }} --}}
-            {{ Form::date('start', $booking->start, ['class' => 'form-control' . ($errors->has('start') ? ' is-invalid' : ''), 'placeholder' => 'Start']) }}
+            {{ Form::date('start', (\Carbon\Carbon::parse($booking->start)->format('d/m/Y')), ['class' => 'form-control' . ($errors->has('start') ? ' is-invalid' : ''), 'placeholder' => 'Start']) }}
+            
             {!! $errors->first('start', '<div class="invalid-feedback">:message</p>') !!}
                
         </div>
         <div class="form-group">
             {{ Form::label('End') }}
-            {{-- {{ Form::text('end', $booking->end, ['class' => 'form-control' . ($errors->has('end') ? ' is-invalid' : ''), 'placeholder' => 'End']) }} --}}
-            {{ Form::date('end', $booking->end, ['class' => 'form-control' . ($errors->has('end') ? ' is-invalid' : ''), 'placeholder' => 'End']) }}
+            {{-- {{ Form::text('end', $booking->end, ['class' => 'form-control' . ($errors->has('end') ? ' is-invalid' : ''), 'placeholder' => 'End']) }} --}}        
+            {{ Form::date('end', (\Carbon\Carbon::parse($booking->end)->format('d/m/Y')), ['class' => 'form-control' . ($errors->has('end') ? ' is-invalid' : ''), 'placeholder' => 'End']) }}
+            {{-- {{ \Carbon\Carbon::parse($booking->end)->format('d/m/Y') }} --}}
             {!! $errors->first('end', '<div class="invalid-feedback">:message</p>') !!}
                 
         </div>
@@ -38,8 +40,9 @@
 
     </div>
     <div class="box-footer mt20">
-        <button type="submit" class="btn btn-primary" href="{{ url('/bookings.show') }}">            
+        {{-- <button type="submit" class="btn btn-primary" href="{{ url('/bookings.show') }}">            
             Submit
-        </button>
+        </button> --}}
+        <button type="submit" class="btn btn-primary">Submit</button>
     </div>
 </div>

@@ -6,9 +6,10 @@
 
 @section('content')
 
-    <section class="content container-fluid">
-        <div class="">
-            <div class="col-md-12">
+    {{-- <section class="content container-fluid"> --}}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
 
                 @includeif('partials.errors')
 
@@ -29,5 +30,6 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    {{-- </section> --}}
 @endsection

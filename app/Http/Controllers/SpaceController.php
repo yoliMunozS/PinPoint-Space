@@ -114,6 +114,7 @@ class SpaceController extends Controller
             return redirect()->route('spaces.index')
                 ->with('failure', 'No eres propietario del espacio.');
         }
+       
     }
 
     /**

@@ -6,15 +6,17 @@
 
 @section('content')
 
-    <section class="content container-fluid">
-        <div class="">        
-            <div class="col-md-12">
+    {{-- <section class="content container-fluid"> --}}
+    <div class="container"> 
+
+        <div class="row justify-content-center">       
+            <div class="col-md-8">
 
                 @includeif('partials.errors')
 
                 <div class="card card-default">
                     <div class="card-header">
-                        <span class="card-title">Modifique los detalles de la reserva:</span>
+                        <h3 class="card-title">Modifique los detalles de la reserva:</h3>
                     </div><br>
                     <div class="card-body">
                         <form method="POST" action="{{ route('bookings.update', $booking->id) }}"  role="form" enctype="multipart/form-data">
@@ -28,8 +30,6 @@
                 </div>
             </div>
         </div>
-    </section>
-
-
-
+    </div>
+    {{-- </section> --}}
 @endsection
