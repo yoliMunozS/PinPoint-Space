@@ -56,6 +56,7 @@
                                                 <form action="{{ route('spaces.destroy',$myspace->id) }}" method="POST">
                                                     <a class="btn btn-sm btn-primary " href="{{ route('spaces.show',$myspace->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
                                                     <a class="btn btn-sm btn-success" href="{{ route('spaces.edit',$myspace->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>
+                                                    <a class="btn btn-sm btn-info " href="{{ route('bookings.booking', $myspace->id ) }}"><i class="fa fa-fw fa-eye"></i> Booking</a>
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Delete</button>
@@ -110,7 +111,7 @@
                                             <td>
                                                 <form action="{{ route('spaces.destroy',$space->id) }}" method="POST">
                                                     <a class="btn btn-sm btn-primary " href="{{ route('spaces.show',$space->id) }}"><i class="fa fa-fw fa-eye"></i> Show</a>
-                                                    <a class="btn btn-sm btn-info " href="{{ route('bookings.create', $space->id ) }}"><i class="fa fa-fw fa-eye"></i> Booking</a>
+                                                    <a class="btn btn-sm btn-info " href="{{ route('bookings.booking', $space->id ) }}"><i class="fa fa-fw fa-eye"></i> Booking</a>
                                                     @csrf
                                                 </form>
                                             </td>

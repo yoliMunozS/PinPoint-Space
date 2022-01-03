@@ -57,3 +57,6 @@ Route::resource('bookings', BookingController::class) -> middleware('auth');
 
 // Ruta peticiones pendientes de espacios 
 //Route::get('space/{id}',[SpaceController::class,'show']) -> name('space.show');
+
+// Ruta para reservar desde la página space
+Route::get('space/{id}', [BookingController::class, 'booking']) -> name('bookings.booking');

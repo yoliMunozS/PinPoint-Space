@@ -138,5 +138,14 @@ class BookingController extends Controller
             return redirect()->route('spaces.index')
                 ->with('failure', 'No eres propietario de la reserva.');
         }
+
     }
+
+    public function booking($id)
+    {
+        $booking = Booking::find($id);
+
+        return view('booking.booking', compact('booking'));
+    }
+    
 }
