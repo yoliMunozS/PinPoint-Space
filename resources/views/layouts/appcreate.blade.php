@@ -24,7 +24,7 @@
 
     <!-- Revolution Slider -->
     <link rel="stylesheet" href="../assets/css/style.css">
-    </style> 
+    
     <script src="../assets/plugins/modernizr.min.js"></script>
   </head>
   <body>

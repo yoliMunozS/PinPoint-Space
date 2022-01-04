@@ -12,7 +12,7 @@
             <div class="card">
                 <div class="card-header"></div>
                   <div class="title text-left">
-                    <h2>Welcome to PinPoint</h2><br>
+                    <h2>Welcome to PinPoint Space</h2><br>
                   </div>
                     <div class="card-body">
                     @if (session('status'))
