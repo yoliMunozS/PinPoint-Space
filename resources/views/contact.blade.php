@@ -22,15 +22,6 @@
 
     <!-- Revolution Slider -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map_canvas {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-    </style>
     <script src="assets/plugins/modernizr.min.js"></script>
   </head>
   <body>
@@ -65,7 +56,7 @@
 
  <!-- Navigation -section
   =========================-->
-<nav class="navbar navbar-fixed-top navigation" >
+<nav class="navbar navbar-fixed-top navigation">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -75,19 +66,32 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand logo" href="index.html">
-        <img src="images/logo-yellow.png" alt="">
+      <a class="navbar-brand logo" href="{{ url('/home')}}">
+        <img src="assets/images/logo/logo1-negro2.png" height="220%" img-align="left">
       </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav navbar-right menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Service</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
+
+      <!-- Redirección a home -->
+        <li><a href="{{ url('/home') }}">Home</a></li>
+        
+      <!-- Redirección a login -->
+      @if (Route::has('login'))
+        <li class="nav-item">
+           <!--  modificada ruta de redirección del login  -->
+          <a class="nav-link" href="{{ url('loginIn') }}">Login</a>
+        </li>
+      @endif
+
+      @if (Route::has('register'))
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('register') }}">Create an account</a>
+            </li>
+        @endif
+        
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
@@ -95,39 +99,37 @@
 
 <!-- Contact header-section 
   =========================-->
-<section class="page-header services-header" data-parallax="scroll" data-image-src="assets/images/header/contact-folding-img.jpg">
+<section class="page-header services-header" data-parallax="scroll" data-image-src="assets/images/header/contact-folding-img.jpg" width="2%">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="text-center">Contact Us. <br> We Ensure Quality Spaces.</h1>
+        <h1 class="text-center"> Contact Us </h1>
       </div>
     </div>
   </div>
 </section>
 
-  <!-- Google map Study Sections 
+  <!-- Info Section
   =========================-->
-<section class="contact-map">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12 padding-0">
-        <!-- map -->
-         <div id="map" data-latitude="51.507351" data-longitude="-0.127758"></div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 padding-0">
+        
         <!-- Contact Information -->
         <div class="contact-info">
           <div class="contact-img">
-            <img src="images/contact/contact-img1.png" alt="">
+            <img src="assets/images/contact/contact-img1.png" alt="">
           </div>
           <div class="contact-content">
             <div class="content-title-section">
-              <h3 class="content-title">redcodder solution</h3>
+              <h3 class="content-title">PinPoint Space S.L.</h3>
             </div>
             <div class="home-address">
               <div class="flex">
                 <div class="contact-icon">
                   <i class="tf-ion-ios-home-outline"></i>
                 </div>
-                <p class="ct-info">24 Golden Tower (2nd Floor),  Sylhet.</p>
+                <p class="ct-info">Av. del Paral·lel, 71, 08004 Barcelona</p>
               </div>
             </div>
             <div class="web-address">
@@ -135,28 +137,23 @@
                 <div class="contact-icon">
                   <i class="tf-global"></i>
                 </div>
-                <a href="#" class="ct-info">deviserweb.com</a>
+                <a href="#" class="ct-info">pinpoint-space.com</a>
               </div>
             </div>
             <div class="phone-address">
               <div class="flex">
                 <div class="contact-icon">
-                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <i class="tf-mobile" aria-hidden="true"></i>
                 </div>
-                <p class="ct-info">01771-299299 (Mobile)</p>
+                <p class="ct-info">+34 93 3476100</p>
               </div>
-            </div>
-            <div class="contact-protfolio">
-              <img src="assets/images/contact/contact-img2.png" alt="">
-              <img src="assets/images/contact/contact-img3.png" alt="">
-              <img src="assets/images/contact/contact-img4.png" alt="">
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+  
 
  <!-- Contact From Study Sections 
   =========================-->
@@ -164,7 +161,7 @@
    <div class="container">
      <div class="row">
        <div class="title text-center">
-         <h2>Contact Us</h2>
+         <h2>Si lo prefieres, déjanos un mensaje</h2>
        </div>
        <form class="" method="post">
          <div class="col-md-6">
@@ -185,14 +182,14 @@
          </div>
          <div class="col-md-12">
            <div class="contact-btn text-center">
-             <input class="btn btn-default btn-main" type="submit" value="Sent Message">
+            <input class="btn btn-default btn-main" type="submit" value="Sent Message">
            </div>
          </div>
        </form>
      </div>
    </div>
  </section>
-
+ 
  <footer class="footer">
         <div class="container">
             <div class="row">

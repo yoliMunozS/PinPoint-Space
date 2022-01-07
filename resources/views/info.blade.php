@@ -102,7 +102,7 @@
         @endif
 
       <!-- Redirección a contact -->
-        <li><a href="">Contact</a></li>
+        <li><a href="{{ url('/contact') }}">Contact</a></li>
         
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -111,18 +111,27 @@
 
  <!-- Hero Area -section
   =========================-->
-  <header class="hero-area th-fullpage" data-parallax="scroll" data-image-src="assets/images/slider/bg-1.jpg">
+  <!-- <header class="hero-area th-fullpage" data-parallax="scroll" data-image-src="assets/images/slider/bg-2.jpg" width="2%">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <h1><br><br><br><br><br>
-          We know what you need,<br>
-            We Ensure Quality Spaces</h1>
+          More Info...<br>
+            About Us</h1>
         </div>
       </div>
     </div>
-  </header>
-  
+  </header> -->
+  <section class="page-header services-header" data-parallax="scroll" data-image-src="assets/images/slider/bg-3.jpg" width="2%">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center">More Info...<br>
+            About Us </h1>
+      </div>
+    </div>
+  </div>
+</section>
 
  <!-- Secciones
   =========================-->
@@ -312,7 +321,7 @@
                           @endif
 
                           <!-- Redirección a contact -->
-                            <li><a href="{{ url('/home') }}">Contact</a></li>
+                            <li><a href="{{ url('/contact') }}                                                   ">Contact</a></li>
                             
                         </ul>
                     </div>
