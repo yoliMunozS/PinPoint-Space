@@ -122,7 +122,7 @@
       </div>
     </div>
   </header> -->
-  
+
   <section class="page-header services-header" data-parallax="scroll" data-image-src="assets/images/slider/bg-3.jpg" width="2%">
   <div class="container">
     <div class="row">
@@ -134,124 +134,136 @@
   </div>
 </section>
 
- <!-- Secciones
+ <!-- Blog Sections 
   =========================-->
-
-  <section class="case-study">
-    <div class="text-center">
-      <h2 class="title">The Space that you need</h2>
-    </div>
-
-    <!-- PinPoint Description
-      =========================-->
-    <div class="case-study-content">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <!-- inner sub-title -->
-            <div class="content">
-              <h4 class="inner-title">Los espacios para preparar tu reunión o evento</h4>
-              <p class="case-description">Disponemos de diferentes y nuevos espacios a diario para reuniones comerciales, exposiciones o diferentes eventos en Barcelona y alrededores. Encuentra fotografías, precios, opiniones y promociones de los mejores espacios en Barcelona.</p>
-              <p>
-                Encuentra el lugar ideal en Barcelona y su área metropolitana donde organizar y celebrar tu reunión de trabajo. ¿A qué esperas para descubrirlo?
-              </p>
-              <!-- View More Details -->
-              <a class="btn btn-default btn-main" href="{{ url('/info') }}" role="button">Saber más</a>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="img-content">
-              <img class="img-responsive" src="assets/images/case-study/case-study-img2.png" alt="">
-            </div>
-          </div>
+  <section class="blog-single">
+  	<div class="container">
+  		<div class="row">
+        <div class="title text-center">
+          <h2>Te explicamos un poco más sobre nosotros</h2>
         </div>
-      </div>
-    </div>
-    <!-- Case Study Description
-      bottom section -->
-    <div class="case-study-content">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="img-content">              
-              <img class="img-responsive" src="assets/images/case-study/case-study-img1.png" alt="">
+  			<div class="col-md-9">
+				  <!-- Blog Left Sections 
+				  =========================-->
+            <!-- Single Blog Page Main Img
+            ============================== -->
+            <div class="blog-single-section-img">
+              <img src="assets/images/single-blog.jpg" alt="Blog Single Img">
+            </div>
+            <!-- Single Blog Page Main Content
+            ================================== -->
+            <div class="blog-single-content">
+              <div class="blog-content-description">
+                <h3><a class="blog-content-title" href="#">A Complete, Ranke Destinat Moines’ Good Bars,Benefit of the t Media Elite aliquip ex ea commodo .</a></h3>
+                <div class="meta">
+                  <div class="date">
+                    <p>22<sup>nd</sup>Jan 2016</p>
+                  </div>
+                  <div class="author">
+                    <p>By Michal Lomans</p>
+                  </div>
+                </div>
+                <p class="blog-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. videntur parum clari, fiant sollemnes in futurum.</p>
+              </div>
+              <div class="blog-content-description">
+                <h4 class="blog-inner-heading">Note The Basics</h4>
+                <p class="blog-description">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitu</p>
+              </div>
+              <div class="blog-content-description">
+                <h4 class="blog-inner-heading">Selecting Color for Hunting or Target Shooting</h4>
+                <p class="blog-description">r mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis  legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum.</p>
+              </div>
+            </div><!-- End Single Blog Content -->
+            <!-- Single Blog Page Comments
+            ================================== -->
+            <div class="blog-single-comments">
+              <h4 class="comments-title">Déjanos tu comentario y ayúdanos a mejorar (2)</h4>
+              <div class="blog-comments">
+                <div class="media">
+                  <div class="media-left blog-left-img">
+                    <div class="blog-comments-img">
+                      <img class="media-object" src="assets/images/yo2.png" width="65px" alt="comments pic">
+                    </div>
+                  </div>
+                  <div class="media-body comments-body">
+                    <p class="blog-comments-text">“ This is the PERFECT conceal carry handgun..Only gave it a 4 because the slide is super hard to pull back but as I use it more I expect it to become easier. ” est etiam processus dynamicus</p>
+                    <h4 class="media-heading comments-author">Mariola Ortín</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-comments">
+                <div class="media">
+                  <div class="media-left blog-left-img">
+                    <div class="blog-comments-img">
+                      <img class="media-object" src="assets/images/ceo-png.png" alt="comments pic" width="75px">
+                    </div>
+                  </div>
+                  <div class="media-body comments-body">
+                    <p class="blog-comments-text">“ This is the PERFECT conceal carry handgun..Only gave it a 4 because the slide is super hard to pull back but as I use it more I expect it to become easier. ” est etiam processus dynamicus</p>
+                    <h4 class="media-heading comments-author">Spounge Bob</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Single Blog Page Form
+            ================================== -->
+            <!-- <div class="blog-single-form">
+              <form>
+                <div class="form-group col-md-6 padding-0">
+                  <input type="text" class="form-control blog-form-input" placeholder="Your Name">
+                </div>
+                <div class="form-group col-md-6 padding-0 padding-left-15">
+                  <input type="email" class="form-control blog-form-input" placeholder="Your Email">
+                </div>
+                <div class="form-group col-md-12 padding-0">
+                  <textarea class="form-control blog-form-textarea" placeholder="Your Comment"></textarea>
+                </div>
+                <div class="col-md-12 padding-0">
+                  <div class="form-submit-btn text-center">
+                    <button type="submit" class="btn btn-default btn-main th-btn">Submit Comment</button>
+                  </div>
+                </div>
+              </form>
+            </div> -->
+
+          <!-- See All Post -->
+          <div class="col-md-12">
+            <div class="see-all-post text-center">
+              <a class="btn btn-default th-btn solid-btn" href="{{ url('/home') }}" role="button"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Back To Home </a>
             </div>
           </div>
-          <div class="col-md-6">
-            <!-- inner sub-title -->
-            <div class="content">
-              <h4 class="inner-title">¿Cómo puedo publicar una sala?</h4>
-              <p class="case-description">Si dispones de uno o varios espacios que se encuentren bien acondicionados para realizar reuniones o eventos relacionados con el entorno laboral y que no siempre estén ocupados, éste es tu sitio. </p>
-              <p>
-                Nosotros te ayudamos a conseguir que tu espacio tenga una mayor difusión, llegando al alcance de más personas. Vas a conseguir así tener un mayor número de clientes y una mayor rentabilidad de tu local.  
-              </p>
-              <!-- View More Details -->
-              <a class="btn btn-default btn-main" href="{{ url('/home') }}">Saber más</a>
+  			</div>
+  			<div class="col-md-3">
+				  <!-- Blog Right Sections 
+				  =========================-->
+	  				<div class="blog-sidbar">
+            <div class="search widgets">
+              <form class="form-inline">
+                <div class="form-group search-input">
+                  <input type="text" class="form-control" placeholder="Search ...">
+                </div>
+                <button type="submit" class="btn btn-default tf-search-btn"><i class="tf-search"></i></button>
+              </form>
+            </div>
+            <div class="categories widgets">
+              <div class="list-group text-center">
+                <div class="list-group-item active"> Top Categories </div>
+                <a href="#" class="list-group-item">Crea tu cuenta</a>
+                <a href="#" class="list-group-item">Descubre nuevos Espacios - <br>
+                  Consulta tus espacios</a>
+                <a href="#" class="list-group-item">Reserva - <br>
+                Consulta tus Reservas</a>
+                <a href="#" class="list-group-item">Contacta con nosotros</a>
+                <a href="#" class="list-group-item">Trabaja con nosotros</a>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
+  			</div>
+  		</div>
+  	</div>
   </section>
   
-
-<!-- Opiniones Clientes
-=========================-->
-<section class="clients" data-parallax="scroll" data-image-src="assets/images/slider/bg-3.jpg">
-  <div class="section">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="title text-center">
-            <h2>Clients Opinion</h2>
-          </div>
-          <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 padding-0 slider-main">
-            <div class="testimonial-slider">
-              <div class="item">
-                <!-- Slider item -->
-                <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 padding-0">
-                <div class="testimonials-area">
-                  <div class="round-shape"></div>
-                  <p class="testimonials-description">Nuestros espacios son especialmente seleccionados 
-                    para una acogida perfecta. Nosotros no trabajamos con los que no respetan nuestros 
-                    Criterios de Calidad, incluyendo la normativa de higiene, limpieza y desinfección. 
-                  </p>
-                  <div class="author">
-                    <img src="assets/images/ceo-png.png" width="100px" alt="Clients">                    
-                    <h3 class="author-name">Bob Spounge </h3>
-                    <span class="designation">CEO at PinPoint</span>
-                  </div>
-                </div>
-                </div>
-                <!-- End Slider item -->
-              </div>
-              <div class="item"> 
-                <!-- Slider item -->
-                <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 padding-0"> 
-                <div class="testimonials-area"> 
-                   <div class="round-shape"></div>
-                   <p class="testimonials-description">Somos una empresa responsable y con muchas ganas de 
-                     dar una gran oportunidad para hacer reservas de espacios tanto para grandes, medianas 
-                     y pequeñas empresas. Además, incluímos reuniones para particulares, ya que nos preocupan 
-                     todas aquellas personas que necesitan disponer de un espacio para reuniones o eventos.
-                  </p>
-                  <div class="author">
-                    <img src="assets/images/yo2.png" width="75px" id="yo-foto" alt="Clients">
-                    <h3 class="author-name">Mariola Ortín</h3>
-                    <span class="designation">FrontEnd Developer at PinPoint Space</span>
-                  </div>
-                </div>
-                </div>
-                <!-- End Slider item -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div><!-- /.End row -->
-    </div>
-  </div>
-</section>
-
 
   
 <footer class="footer">
