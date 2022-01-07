@@ -102,7 +102,7 @@
         @endif
 
       <!-- Redirección a contact -->
-        <li><a href="{{ url('/contact') }}">Contact</a></li>
+        <li><a href="">Contact</a></li>
         
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -312,7 +312,7 @@
                           @endif
 
                           <!-- Redirección a contact -->
-                            <li><a href="{{ url('/contact') }}">Contact</a></li>
+                            <li><a href="{{ url('/home') }}">Contact</a></li>
                             
                         </ul>
                     </div>

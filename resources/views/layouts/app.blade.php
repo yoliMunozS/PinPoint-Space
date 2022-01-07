@@ -95,7 +95,7 @@
           @endif
 
             <!-- Redirección a contact -->
-            <li><a href="">Contact</a></li>
+            <li><a href="{{ url('/contact') }}">Contact</a></li>
 
            @else
             <li class="nav-item dropdown">
@@ -189,7 +189,7 @@
                             <li><a class="nav-link" href="{{ url('/spaces') }}">Spaces</a></li>                          
 
                           <!-- Redirección a contact -->
-                            <li><a href="">Contact</a></li>
+                            <li><a href="{{ url('/contact') }}">Contact</a></li>
                             
                         </ul>
                     </div>

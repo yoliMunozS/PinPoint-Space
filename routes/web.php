@@ -26,6 +26,12 @@ Route::get('/index', function () {
 Route::get('/home', function () {
     return view('index');
 });
+Route::get('/contact', function () {
+    return view('contact');
+});
+Route::get('/info', function () {
+    return view('info');
+});
 
 //Ruta para cuando ya estás registrado
 Route::get('/loginIn', function () {
