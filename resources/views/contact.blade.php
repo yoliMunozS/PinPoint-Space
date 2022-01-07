@@ -99,7 +99,7 @@
 
 <!-- Contact header-section 
   =========================-->
-<section class="page-header services-header" data-parallax="scroll" data-image-src="assets/images/header/contact-folding-img.jpg" width="2%">
+<section class="page-header services-header" data-parallax="scroll" data-image-src="assets/images/slider/bg-2.jpg" width="2%">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
