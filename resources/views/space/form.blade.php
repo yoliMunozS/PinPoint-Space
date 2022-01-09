@@ -12,7 +12,7 @@
         </div>
         <div class="form-group">
             {{ Form::label('user') }}
-            {{ Form::text('user_id', $space->user_id, ['class' => 'form-control' . ($errors->has('user_id') ? ' is-invalid' : ''), 'placeholder' => 'User Id']) }}
+            {{ Form::text('user_id', $space->user_id, ['class' => 'form-control' . ($errors->has('user_id') ? ' is-invalid' : ''), 'placeholder' => 'User name']) }}
             {!! $errors->first('user_id', '<div class="invalid-feedback">:message</p>') !!}
                 
         </div>
