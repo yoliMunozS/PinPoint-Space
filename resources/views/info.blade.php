@@ -23,20 +23,12 @@
     <!-- Revolution Slider -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map_canvas {
-        height: 100%;
-      } -->
       <!-- /* Optional: Makes the sample page fill the window. */
     </style> -->
     <script src="assets/plugins/modernizr.min.js"></script>
   </head>
   <body>
-    <!--[if lt IE 8]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+
 
   <!-- Loader to display before content Load-->
   <div class="loading">
