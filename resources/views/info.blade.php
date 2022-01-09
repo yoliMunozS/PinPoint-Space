@@ -97,7 +97,7 @@
         <li><a href="{{ url('/contact') }}">Contact</a></li>
         
       </ul>
-    </div><!-- /.navbar-collapse -->
+    </div>
   </div>
 </nav>
 
@@ -274,7 +274,6 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-
                             <!-- footer Address section
                             ========================== -->
                             <div class="footer-address">
@@ -347,15 +346,11 @@
   <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
   <!-- slick slider -->
   <script src="assets/plugins/slick/slick.min.js"></script>
-  <!-- filter -->
-  <!-- <script src="assets/plugins/filterizr/jquery.filterizr.min.js"></script> -->
   <!-- Lightbox -->
   <script src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
   <!-- Parallax -->
   <script src="assets/plugins/parallax.min.js"></script>
-  <!-- Video -->
-  <!-- <script src="assets/plugins/jquery.vide.js"></script> -->
-
+  <!-- JavaScript -->
   <script src="assets/js/script.js"></script>
   </body>
 
