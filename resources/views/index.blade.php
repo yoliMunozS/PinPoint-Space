@@ -9,7 +9,6 @@
 
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
-
     <link rel="stylesheet" href="assets/plugins/bootstrap/bootstrap.min.css">
     <!-- ThemeFisher Icon -->
     <link rel="stylesheet" href="assets/plugins/themefisher-fonts/themefisher-fonts.css">
@@ -228,8 +227,6 @@
   </div>
 </section>
 
-
-  
 <footer class="footer">
         <div class="container">
             <div class="row">
@@ -323,15 +320,11 @@
   <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
   <!-- slick slider -->
   <script src="assets/plugins/slick/slick.min.js"></script>
-  <!-- filter -->
-  <!-- <script src="assets/plugins/filterizr/jquery.filterizr.min.js"></script> -->
   <!-- Lightbox -->
   <script src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
   <!-- Parallax -->
   <script src="assets/plugins/parallax.min.js"></script>
-  <!-- Video -->
-  <!-- <script src="assets/plugins/jquery.vide.js"></script> -->
-
+  <!-- JavaScript -->
   <script src="assets/js/script.js"></script>
   </body>
 
