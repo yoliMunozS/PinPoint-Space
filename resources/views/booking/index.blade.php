@@ -17,11 +17,11 @@
                         </div>
                             
 
-                             <div class="float-right">
+                             <!-- <div class="float-right">
                                 <a href="{{ route('bookings.create') }}" class="btn btn-default btn-main"  data-placement="left">
                                   {{ __('Create New') }}
                                 </a>
-                              </div>
+                              </div> -->
                         </div>
                     </div>
                     @if ($message = Session::get('success'))
