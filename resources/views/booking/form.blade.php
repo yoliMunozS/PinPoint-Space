@@ -3,12 +3,12 @@
         
         <div class="form-group">
             {{ Form::label('Name Space') }}
-            {{ Form::text('space_id', $booking->space_id, ['class' => 'form-control' . ($errors->has('space_id') ? ' is-invalid' : ''), 'placeholder' => 'Space Id']) }}
+            {{ Form::text('space_id', $booking->space->name, ['class' => 'form-control' . ($errors->has('space_id') ? ' is-invalid' : ''), 'placeholder' => 'Space Id']) }}
             {!! $errors->first('space_id', '<div class="invalid-feedback">:message</p>') !!}
         </div>
         <div class="form-group">
             {{ Form::label('User') }}
-            {{ Form::text('user_id', $booking->user_id, ['class' => 'form-control' . ($errors->has('user_id') ? ' is-invalid' : ''), 'placeholder' => 'User Id']) }}
+            {{ Form::text('user_id', $booking->user->name, ['class' => 'form-control' . ($errors->has('user_id') ? ' is-invalid' : ''), 'placeholder' => 'User Id']) }}
             {!! $errors->first('user_id', '<div class="invalid-feedback">:message</p>') !!}
         </div>
         <div class="form-group">
@@ -33,8 +33,8 @@
             {!! $errors->first('assistants', '<div class="invalid-feedback">:message</p>') !!}
         </div>
         <div class="form-group">
-            {{ Form::label('Accepted') }}
-            {{ Form::text('accepted', $booking->accepted, ['class' => 'form-control' . ($errors->has('accepted') ? ' is-invalid' : ''), 'placeholder' => 'Accepted']) }}
+            {{ Form::label('Pending to Accepted') }}
+            {{ Form::checkbox('accepted', $booking->accepted, ['class' => 'form-control' . ($errors->has('accepted') ? ' is-invalid' : ''), 'placeholder' => 'Accepted']) }}
             {!! $errors->first('accepted', '<div class="invalid-feedback">:message</p>') !!}
         </div>
 
