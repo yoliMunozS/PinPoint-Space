@@ -161,7 +161,7 @@
                 Nosotros te ayudamos a conseguir que tu espacio tenga una mayor difusión, llegando al alcance de más personas. Vas a conseguir así tener un mayor número de clientes y una mayor rentabilidad de tu local.  
               </p>
               <!-- View More Details -->
-              <a class="btn btn-default btn-main" href="{{ url('/home') }}">Saber más</a>
+              <a class="btn btn-default btn-main" href="{{ url('loginIn') }}">Saber más</a>
             </div>
           </div>
         </div>
