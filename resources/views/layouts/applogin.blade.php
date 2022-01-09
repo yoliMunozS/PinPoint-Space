@@ -8,10 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Modificación de todas las rutas del los href  -->
-
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
-
     <link rel="stylesheet" href="assets/plugins/bootstrap/bootstrap.min.css">
     <!-- ThemeFisher Icon -->
     <link rel="stylesheet" href="assets/plugins/themefisher-fonts/themefisher-fonts.css">
@@ -28,10 +26,6 @@
     <script src="assets/plugins/modernizr.min.js"></script>
   </head>
   <body>
-    <!--[if lt IE 8]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
   <!-- Loader to display before content Load-->
   <div class="loading">
 
@@ -226,7 +220,7 @@
   <script src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
   <!-- Parallax -->
   <script src="assets/plugins/parallax.min.js"></script>
-
+  <!-- JavaScript -->
   <script src="assets/js/script.js"></script>
 
   </body>

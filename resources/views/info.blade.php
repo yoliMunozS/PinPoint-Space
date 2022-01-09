@@ -23,20 +23,12 @@
     <!-- Revolution Slider -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map_canvas {
-        height: 100%;
-      } -->
       <!-- /* Optional: Makes the sample page fill the window. */
     </style> -->
     <script src="assets/plugins/modernizr.min.js"></script>
   </head>
   <body>
-    <!--[if lt IE 8]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+
 
   <!-- Loader to display before content Load-->
   <div class="loading">
@@ -105,34 +97,22 @@
         <li><a href="{{ url('/contact') }}">Contact</a></li>
         
       </ul>
-    </div><!-- /.navbar-collapse -->
+    </div>
   </div>
 </nav>
 
  <!-- Hero Area -section
   =========================-->
-  <!-- <header class="hero-area th-fullpage" data-parallax="scroll" data-image-src="assets/images/slider/bg-2.jpg" width="2%">
+  <section class="page-header services-header" data-parallax="scroll" data-image-src="assets/images/slider/bg-3.jpg" width="2%">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1><br><br><br><br><br>
-          More Info...<br>
-            About Us</h1>
+          <h1 class="text-center"> More Info...<br>
+              About Us </h1>
         </div>
       </div>
     </div>
-  </header> -->
-
-  <section class="page-header services-header" data-parallax="scroll" data-image-src="assets/images/slider/bg-3.jpg" width="2%">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="text-center"> More Info...<br>
-            About Us </h1>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
  <!-- Blog Sections 
   =========================-->
@@ -154,24 +134,32 @@
             ================================== -->
             <div class="blog-single-content">
               <div class="blog-content-description">
-                <h3><a class="blog-content-title" href="#">A Complete, Ranke Destinat Moines’ Good Bars,Benefit of the t Media Elite aliquip ex ea commodo .</a></h3>
+                <h3><a class="blog-content-title" href="#">PinPoint Space es una empresa que te llevará mucho más allá de la reserva de espacios.</a></h3>
                 <div class="meta">
                   <div class="date">
-                    <p>22<sup>nd</sup>Jan 2016</p>
+                    <p>01<sup>st</sup>Jan 2022</p>
                   </div>
                   <div class="author">
-                    <p>By Michal Lomans</p>
+                    <p>By Mariola Ortín</p>
                   </div>
                 </div>
-                <p class="blog-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. videntur parum clari, fiant sollemnes in futurum.</p>
+                <p class="blog-description">Nuestra empresa nació en el año 2021, cuando Yolanda, Óscar y Mariola decidieron llevar a cabo el proyecto por el que estuvieron luchando durante meses. Somos una pequeña empresa que ha estado buscando soluciones para todas aquellas empresas y particulares que necesiten de este servicio.</p>
               </div>
               <div class="blog-content-description">
-                <h4 class="blog-inner-heading">Note The Basics</h4>
-                <p class="blog-description">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitu</p>
+                <h4 class="blog-inner-heading">Regístrate para conocernos mejor </h4>
+                <p class="blog-description">Para empezar a disfrutar de nuestras ventajas, solamente necesitas registrarte en nuestra web. Hecho esto, podrás ver los espacios que tenemos disponibles y si te interesa alguno, siéntete libre de reservarlo y ver toda su información, como el número de personas admitido, su horario, el precio y días disponibles... Además, podrás registrar tus espacios, si los tienes, y ver las reservas en cada uno de ellos. </p>
               </div>
               <div class="blog-content-description">
-                <h4 class="blog-inner-heading">Selecting Color for Hunting or Target Shooting</h4>
-                <p class="blog-description">r mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis  legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum.</p>
+                <h4 class="blog-inner-heading">¿Puedo hacer una reserva y luego anularla, si finalmente no es posible?</h4>
+                <p class="blog-description">Sí, no hay problema. Conocemos la situación actual y sabemos que pueden surgir muchos imprevistos que nos hagan anular la reserva a última hora. Nosotros nos encargamos de estas anulaciones, siempre y cuando se realicen en el plazo anterior a 24 horas de la reserva. </p>
+              </div>
+              <div class="blog-content-description">
+                <h4 class="blog-inner-heading">¿Qué sucede si finalmente no puedo permitir una reserva en mi espacio?</h4>
+                <p class="blog-description">Si finalmente no tienes el local disponible para las reservas, te permitimos que anules reservas ya hechas, y nosotros nos encargaremos de avisar al responsable. Queremos que te sientas cómodos con nosotros.</p>
+              </div>
+              <div class="blog-content-description">
+                <h4 class="blog-inner-heading">¿Qué sucede si alguien cancela la reserva antes de 24 horas en mi espacio?</h4>
+                <p class="blog-description">Nosotros llamaremos y te avisaremos.</p>
               </div>
             </div><!-- End Single Blog Content -->
             <!-- Single Blog Page Comments
@@ -186,7 +174,7 @@
                     </div>
                   </div>
                   <div class="media-body comments-body">
-                    <p class="blog-comments-text">“ This is the PERFECT conceal carry handgun..Only gave it a 4 because the slide is super hard to pull back but as I use it more I expect it to become easier. ” est etiam processus dynamicus</p>
+                    <p class="blog-comments-text">“ Es una página ideal que te ayuda a encontrar espacios disponibles para hacer la reunión a cualquier tipo de evento que tengas. Lo hacen todo muy sencillo y fácil. Solo necesitas crear una cuenta y ya estarás listo para empezar a disfrutar de sus ventajas. ” </p>
                     <h4 class="media-heading comments-author">Mariola Ortín</h4>
                   </div>
                 </div>
@@ -199,8 +187,8 @@
                     </div>
                   </div>
                   <div class="media-body comments-body">
-                    <p class="blog-comments-text">“ This is the PERFECT conceal carry handgun..Only gave it a 4 because the slide is super hard to pull back but as I use it more I expect it to become easier. ” est etiam processus dynamicus</p>
-                    <h4 class="media-heading comments-author">Spounge Bob</h4>
+                    <p class="blog-comments-text">“ PinPoint es mucho más que una empresa de alquiler de espacios. Incluso como particular, te permite registrarte y poner a la disposición de sus clientes aquellos espacios de los que dispones. Una maravilla, vamos."</p>
+                    <h4 class="media-heading comments-author">Marco Polo</h4>
                   </div>
                 </div>
               </div>
@@ -208,7 +196,7 @@
 
             <!-- Single Blog Page Form
             ================================== -->
-            <!-- <div class="blog-single-form">
+            <div class="blog-single-form">
               <form>
                 <div class="form-group col-md-6 padding-0">
                   <input type="text" class="form-control blog-form-input" placeholder="Your Name">
@@ -225,7 +213,7 @@
                   </div>
                 </div>
               </form>
-            </div> -->
+            </div>
 
           <!-- See All Post -->
           <div class="col-md-12">
@@ -286,7 +274,6 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-
                             <!-- footer Address section
                             ========================== -->
                             <div class="footer-address">
@@ -359,15 +346,11 @@
   <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
   <!-- slick slider -->
   <script src="assets/plugins/slick/slick.min.js"></script>
-  <!-- filter -->
-  <!-- <script src="assets/plugins/filterizr/jquery.filterizr.min.js"></script> -->
   <!-- Lightbox -->
   <script src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
   <!-- Parallax -->
   <script src="assets/plugins/parallax.min.js"></script>
-  <!-- Video -->
-  <!-- <script src="assets/plugins/jquery.vide.js"></script> -->
-
+  <!-- JavaScript -->
   <script src="assets/js/script.js"></script>
   </body>
 

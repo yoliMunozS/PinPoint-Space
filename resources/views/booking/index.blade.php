@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+<!-- Tabla mis reservas realizadas -->
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
@@ -92,11 +93,11 @@
                     <div class="title text-left">
                         <h2>Bookings in my Spaces</h2><br>
                     </div>
-                            <div class="float-right">
-                            <a href="{{ route('bookings.create') }}" class="btn btn-default btn-main"  data-placement="left">
-                                {{ __('Create New') }}
-                            </a>
-                            </div>
+                        <!-- <div class="float-right">
+                        <a href="{{ route('bookings.create') }}" class="btn btn-default btn-main"  data-placement="left">
+                            {{ __('Create New') }}
+                        </a>
+                        </div> -->
                     </div>
                 </div>
     

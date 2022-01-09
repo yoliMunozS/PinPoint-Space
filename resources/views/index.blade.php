@@ -9,7 +9,6 @@
 
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
-
     <link rel="stylesheet" href="assets/plugins/bootstrap/bootstrap.min.css">
     <!-- ThemeFisher Icon -->
     <link rel="stylesheet" href="assets/plugins/themefisher-fonts/themefisher-fonts.css">
@@ -22,22 +21,9 @@
 
     <!-- Revolution Slider -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map_canvas {
-        height: 100%;
-      } -->
-      <!-- /* Optional: Makes the sample page fill the window. */
-    </style> -->
     <script src="assets/plugins/modernizr.min.js"></script>
   </head>
   <body>
-    <!--[if lt IE 8]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
   <!-- Loader to display before content Load-->
   <div class="loading">
 
@@ -126,7 +112,6 @@
 
  <!-- Secciones
   =========================-->
-
   <section class="case-study">
     <div class="text-center">
       <h2 class="title">The Space that you need</h2>
@@ -176,7 +161,7 @@
                 Nosotros te ayudamos a conseguir que tu espacio tenga una mayor difusión, llegando al alcance de más personas. Vas a conseguir así tener un mayor número de clientes y una mayor rentabilidad de tu local.  
               </p>
               <!-- View More Details -->
-              <a class="btn btn-default btn-main" href="{{ url('/home') }}">Saber más</a>
+              <a class="btn btn-default btn-main" href="{{ url('loginIn') }}">Saber más</a>
             </div>
           </div>
         </div>
@@ -242,8 +227,6 @@
   </div>
 </section>
 
-
-  
 <footer class="footer">
         <div class="container">
             <div class="row">
@@ -337,15 +320,11 @@
   <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
   <!-- slick slider -->
   <script src="assets/plugins/slick/slick.min.js"></script>
-  <!-- filter -->
-  <!-- <script src="assets/plugins/filterizr/jquery.filterizr.min.js"></script> -->
   <!-- Lightbox -->
   <script src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
   <!-- Parallax -->
   <script src="assets/plugins/parallax.min.js"></script>
-  <!-- Video -->
-  <!-- <script src="assets/plugins/jquery.vide.js"></script> -->
-
+  <!-- JavaScript -->
   <script src="assets/js/script.js"></script>
   </body>
 
