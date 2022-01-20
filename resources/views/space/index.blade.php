@@ -35,7 +35,7 @@
                                 <thead class="thead">
                                     <tr>
                                         <th>No</th>
-                                        
+                                        <th>Id</th>                                        
 										<th>Name</th>
 										<th>User Id</th>
 										<th>Capacity</th>
@@ -47,7 +47,7 @@
                                     @foreach ($myspaces as $myspace)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-
+                                            <td>{{ $myspace->id }}</td>
                                             <td>{{ $myspace->name }}</td>
 											<td>{{ $myspace->user->name }}</td>
 											<td>{{ $myspace->capacity }}</td>
@@ -97,6 +97,7 @@
                                 <thead class="thead">
                                     <tr>
                                         <th>No</th>                                        
+                                        <th>Id</th>                                        
 										<th>Name</th>
 										<th>Capacity</th>
                                         <th>Booking the space</th>
@@ -106,6 +107,7 @@
                                     @foreach ($spaces as $space)
                                         <tr>
                                             <td>{{ ++$i }}</td>                                           
+                                            <td>{{ $space->id }}</td>                                           
 											<td>{{ $space->name }}</td>
 											<td>{{ $space->capacity }}</td>
                                             <td>
